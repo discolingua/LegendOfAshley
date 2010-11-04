@@ -8,12 +8,13 @@ package
 		[Embed(source = "assets/art/tilemap.png")] private const TERRAIN:Class;
 		private var terrain:Tilemap = new Tilemap(TERRAIN, 576, 432, 72, 72);
 				
-		public function TerrainMap() 
+		public function TerrainMap():void 
 		{
 			this.graphic = terrain;
 			x = 0;
 			y = 0;
 			type = "terrainmap";
+			
 		}
 		
 	}

@@ -5,15 +5,16 @@ package
 	
 	public class TitleRoom extends World
 	{
-		
+		private var terrain:TerrainMap = new TerrainMap;
 
 		public function TitleRoom()
 		{
 			FP.screen.color = 0x444444;
-			add(new TerrainMap);
-			TerrainMap.setTile(0, 0, 1);
 			
+			add(terrain);
 			add(new Adventurer);
+			
+			terrain.setTile(0, 0, 1);
 			
 			
 		}
