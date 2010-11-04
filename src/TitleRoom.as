@@ -5,7 +5,7 @@ package
 	
 	public class TitleRoom extends World
 	{
-		private var terrain:TerrainMap = new TerrainMap;
+		static public var terrain:TerrainMap = new TerrainMap;
 
 		public function TitleRoom()
 		{
