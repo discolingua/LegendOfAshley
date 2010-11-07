@@ -1,6 +1,8 @@
 package 
 {
 	import net.flashpunk.*;
+	import entities.*;
+	
 	[SWF(width = "576", height = "432")]
 	
 	public class Main extends Engine
