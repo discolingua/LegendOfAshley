@@ -32,32 +32,41 @@ package entities
 		{
 			var newX:Number;
 			var newY:Number;
+			var mySpeed:Number = speed * FP.elapsed;
 			
 			// move the player + keycheck loop
 			
 			if (Input.check(Key.RIGHT))
 			{
-				x += speed * FP.elapsed;
+				newX = x + mySpeed;
+				if (!colliding(new Point(newX, y)))
+				{
+					x += mySpeed;
+				}
 			}
 			else if (Input.check(Key.LEFT) )
 			{
-				newX = x - speed;
+				newX = x - mySpeed;
 				if (!colliding(new Point(newX, y)))
 				{
-					x -= speed * FP.elapsed;
+					x -= mySpeed;
 				}
 			}
 			else if (Input.check(Key.UP))
 			{
-				newY = y - speed;
+				newY = y - mySpeed;
 				if (!colliding(new Point(x, newY)))
 				{
-					y -= speed * FP.elapsed;
+					y -= mySpeed;
 				}		
 			}
 			else if (Input.check(Key.DOWN))
 			{
-				y += speed * FP.elapsed;
+				newY = y + mySpeed;
+				if (!colliding(new Point(x, newY)))
+				{
+					y += mySpeed;
+				}
 			}
 		}
 		

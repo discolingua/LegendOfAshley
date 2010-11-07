@@ -1,5 +1,9 @@
 package entities
 {
+
+	// this is eventually going to get turned into a generic map loader class,
+	// now it is just a test implementation of a tilemap + collision grid
+	
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.Tilemap;
 	import net.flashpunk.masks.Grid;
@@ -17,20 +21,15 @@ package entities
 			y = 0;
 			type = "terrainmap";
 			
-			hillTiles.setTile(0,0,1);
+			hillTiles.setTile(2,2,1);
 			
 			this.mask = hillGrid;
 			x = 0;
 			y = 0;
 			type = "terraingrid";
 			
-			hillGrid.setTile(0, 0, true);
+			hillGrid.setTile(2, 2, true);
 			
-		}
-		
-		public function TerrainGrid():void 
-		{
-
 		}
 		
 /*		public function setTile(column:uint, row:uint, index:uint):void

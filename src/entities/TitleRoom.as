@@ -1,5 +1,9 @@
 package entities
 {
+	// This is a class for the room the player starts in.
+	// It might get merged with TerrainMap
+	
+	
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
 	
@@ -18,8 +22,6 @@ package entities
 			
 			add(terrain);
 			add(new Adventurer);
-			
-			terrain.hillTiles.setTile(0, 0, 1);
 		}
 		
 		override public function update():void 
