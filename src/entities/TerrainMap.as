@@ -21,14 +21,14 @@ package entities
 			y = 0;
 			type = "terrainmap";
 			
-			hillTiles.setTile(2,2,1);
+			hillTiles.setTile(1,1,2);
 			
 			this.mask = hillGrid;
 			x = 0;
 			y = 0;
 			type = "terraingrid";
 			
-			hillGrid.setTile(2, 2, true);
+			hillGrid.setTile(1,1, true);
 			
 		}
 		

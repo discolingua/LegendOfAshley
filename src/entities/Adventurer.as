@@ -18,8 +18,8 @@ package entities
 			graphic = new Image(spr_adventurer);
 			x = 304;
 			y = 224;
-			width = 32;
-			height = 32;
+			width = 72;
+			height = 72;
 			type = "adventurer";
 		}
 		
