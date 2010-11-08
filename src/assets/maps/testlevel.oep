@@ -1,0 +1,23 @@
+<project>
+	<name>Legend of Gribbl</name>
+	<settings>
+		<defaultWidth>320</defaultWidth>
+		<defaultHeight>240</defaultHeight>
+		<workingDirectory>../art</workingDirectory>
+	</settings>
+	
+	<tilesets>
+		<tileset name="terrain" image="tiles16.png" tileHeight="16" tileWidth="16" />
+	</tilesets>
+	
+	<objects>
+		<object name="playerStart" image="adventurer16.png" height="16" width="16" limit="1" />
+	</objects>
+	
+	<layers>
+		<tiles name="terrain" gridSize="16" />
+		<grid name="obstacles" gridSize="16" />
+		<objects name="objects" gridSize="16" />
+	</layers>
+	
+</project>

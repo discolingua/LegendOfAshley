@@ -7,19 +7,17 @@ package entities
 		
 	public class Adventurer extends Entity
 	{
-		[Embed(source = "../assets/art/adventurer72.png")] private var spr_adventurer:Class;
-		
 		private var speed:Number = 200;
 		
 		public function Adventurer():void 
 		{
 			// constructor to set properties of the object
 			
-			graphic = new Image(spr_adventurer);
+			graphic = new Image(Assets.SPR_ADVENTURER);
 			x = 304;
 			y = 224;
-			width = 72;
-			height = 72;
+			width = Constants.TILE_SIZE;
+			height = Constants.TILE_SIZE;
 			type = "adventurer";
 		}
 		
@@ -72,9 +70,8 @@ package entities
 		
 		private function colliding(position:Point):Boolean 
 		{
-	if (collide("terraingrid", position.x, position.y))
+			if (collide("terraingrid", position.x, position.y))
 			{
-				trace("ffffffffffff");
 				return true;
 			}
 			else return false;
