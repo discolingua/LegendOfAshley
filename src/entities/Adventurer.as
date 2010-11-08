@@ -19,6 +19,8 @@ package entities
 			width = Constants.TILE_SIZE;
 			height = Constants.TILE_SIZE;
 			type = "adventurer";
+			
+			setHitbox(Constants.TILE_SIZE/2,Constants.TILE_SIZE,-8,0);
 		}
 		
 		override public function update():void

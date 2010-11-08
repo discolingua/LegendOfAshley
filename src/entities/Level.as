@@ -22,8 +22,6 @@ package entities
 			y = 0;
 			type = "terraintiles";
 			
-			terrainTiles.setTile(1,1,2);
-			
 			this.mask = terrainGrid;
 			x = 0;
 			y = 0;
@@ -38,7 +36,47 @@ package entities
 			var rawData:ByteArray = new xml;
 			var dataString:String = rawData.readUTFBytes( rawData.length );
 			var xmlData:XML = new XML(dataString);
-			trace(xmlData);
+			
+			var dataList:XMLList;
+			var dataElement:XML;
+
+			// variables for placement of individual tiles + rectangles
+			
+			var xpos:int;
+			var ypos:int;
+			var rectW:int;
+			var rectH:int;
+			var tileIndex:int;
+			
+			dataList = xmlData.terrain.tile;
+			
+			// loop through individual tiles + place collision grid
+			
+			for each (dataElement in dataList)
+			{
+				xpos = int(dataElement.@x) / Constants.TILE_SIZE;
+				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
+				tileIndex = int(dataElement.@tx) / Constants.TILE_SIZE;
+				
+				terrainTiles.setTile(xpos, ypos, tileIndex);
+				terrainGrid.setTile(xpos, ypos);
+			}
+			
+			// loop through rectangles
+			
+			dataList = xmlData.terrain.rect;
+			
+			for each (dataElement in dataList)
+			{
+				xpos = int(dataElement.@x) / Constants.TILE_SIZE;
+				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
+				rectW = int(dataElement.@w) / Constants.TILE_SIZE;
+				rectH = int(dataElement.@h) / Constants.TILE_SIZE;
+				tileIndex = int(dataElement.@tx) / Constants.TILE_SIZE;
+				
+				terrainTiles.setRect(xpos, ypos, rectW, rectH, tileIndex);
+				terrainGrid.setRect(xpos, ypos, rectW, rectH);
+			}
 			
 		}
 	}
