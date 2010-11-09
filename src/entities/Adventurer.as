@@ -15,12 +15,11 @@ package entities
 			
 			graphic = new Image(Assets.SPR_ADVENTURER);
 			x = 304;
-			y = 224;
-			width = Constants.TILE_SIZE;
+			y = 124;
+			width = Constants.TILE_SIZE/2;
 			height = Constants.TILE_SIZE;
 			type = "adventurer";
 			
-			setHitbox(Constants.TILE_SIZE/2,Constants.TILE_SIZE,-8,0);
 		}
 		
 		override public function update():void

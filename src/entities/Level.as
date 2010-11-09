@@ -1,8 +1,8 @@
 package entities
 {
 
-	// this is eventually going to get turned into a generic map loader class,
-	// now it is just a test implementation of a tilemap + collision grid
+	// Map loader class, populate the level with terrain grid + objects
+	// from an (XML) OGMO Editor level
 	
 	import flash.utils.ByteArray;
 	import net.flashpunk.*;
@@ -12,10 +12,10 @@ package entities
 	public class Level extends Entity
 	{
 		
-		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 640, 480, 16, 16);
-		public var terrainGrid:Grid = new Grid(640,480, 16, 16, 0, 0);
-		
-		public function Level(xml:Class):void 
+		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 320, 240, 16, 16);
+		public var terrainGrid:Grid = new Grid(320, 240, 16, 16, 0, 0);
+				
+		public function Level(xmlLevel:Class):void 
 		{
 			this.graphic = terrainTiles;
 			x = 0;
@@ -27,13 +27,13 @@ package entities
 			y = 0;
 			type = "terraingrid";
 			
-			loadLevel(xml);
+			loadLevel(xmlLevel);
 			
 		}
 		
-		private function loadLevel(xml:Class):void 
+		private function loadLevel(xmlLevel:Class):void 
 		{
-			var rawData:ByteArray = new xml;
+			var rawData:ByteArray = new xmlLevel;
 			var dataString:String = rawData.readUTFBytes( rawData.length );
 			var xmlData:XML = new XML(dataString);
 			
