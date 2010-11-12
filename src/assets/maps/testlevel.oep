@@ -15,8 +15,7 @@
 	</objects>
 	
 	<layers>
-		<tiles name="terrain" gridSize="16" />
-		<grid name="obstacles" gridSize="16" />
+		<tiles name="terrain" gridSize="16" exportTileIDs="true" />
 		<objects name="objects" gridSize="16" />
 	</layers>
 	

@@ -7,7 +7,8 @@ package entities
 		
 	public class Adventurer extends Entity
 	{
-		private var speed:Number = 200;
+		private var speed:Number = 150;
+		private var facing:String = "up";
 		
 		public function Adventurer():void 
 		{
@@ -16,7 +17,7 @@ package entities
 			graphic = new Image(Assets.SPR_ADVENTURER);
 			x = 304;
 			y = 124;
-			width = Constants.TILE_SIZE/2;
+			width = Constants.TILE_SIZE * 0.5;
 			height = Constants.TILE_SIZE;
 			type = "adventurer";
 			
@@ -38,6 +39,7 @@ package entities
 			if (Input.check(Key.RIGHT))
 			{
 				newX = x + mySpeed;
+				facing = "right";
 				if (!colliding(new Point(newX, y)))
 				{
 					x += mySpeed;
@@ -46,6 +48,7 @@ package entities
 			else if (Input.check(Key.LEFT) )
 			{
 				newX = x - mySpeed;
+				facing = "left";
 				if (!colliding(new Point(newX, y)))
 				{
 					x -= mySpeed;
@@ -54,6 +57,7 @@ package entities
 			else if (Input.check(Key.UP))
 			{
 				newY = y - mySpeed;
+				facing = "up";
 				if (!colliding(new Point(x, newY)))
 				{
 					y -= mySpeed;
@@ -62,6 +66,7 @@ package entities
 			else if (Input.check(Key.DOWN))
 			{
 				newY = y + mySpeed;
+				facing = "down";
 				if (!colliding(new Point(x, newY)))
 				{
 					y += mySpeed;
@@ -73,8 +78,29 @@ package entities
 		{
 			if (collide("terraingrid", position.x, position.y))
 			{
+				// give wall collisions a bit of bounce
+				
+				switch (facing)
+				{
+					case "up":
+					y += Math.floor(y / 16);
+					break;
+					case "down":
+					y -= Math.ceil(y / 16);	
+					break;
+					case "left":
+					x += Math.floor(x / 16);
+					break;
+					case "right":
+					x -= Math.ceil(x / 16);
+					break;
+				}
+				
 				return true;
 			}
+			
+			// add collisions with enemies/objects/doors/etc.
+			
 			else return false;
 		}
 	}

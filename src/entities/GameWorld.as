@@ -3,7 +3,6 @@ package entities
 	// This is a class for the room the player starts in.
 	// It might get merged with TerrainMap
 	
-	
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
 	
@@ -18,8 +17,10 @@ package entities
 		{
 			FP.screen.color = 0x00C322;
 			
-			add(new Level(Assets.TEST_MAP));
+//			add(new Level(Assets.TEST_MAP));
 			add(new Adventurer);
+			
+			add(new TextPopup("oh yes that's right"));
 		}
 		
 		override public function update():void 

@@ -56,7 +56,7 @@ package entities
 			{
 				xpos = int(dataElement.@x) / Constants.TILE_SIZE;
 				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
-				tileIndex = int(dataElement.@tx) / Constants.TILE_SIZE;
+				tileIndex = int(dataElement.@id);
 				
 				terrainTiles.setTile(xpos, ypos, tileIndex);
 				terrainGrid.setTile(xpos, ypos);
@@ -72,7 +72,7 @@ package entities
 				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
 				rectW = int(dataElement.@w) / Constants.TILE_SIZE;
 				rectH = int(dataElement.@h) / Constants.TILE_SIZE;
-				tileIndex = int(dataElement.@tx) / Constants.TILE_SIZE;
+				tileIndex = int(dataElement.@id);
 				
 				terrainTiles.setRect(xpos, ypos, rectW, rectH, tileIndex);
 				terrainGrid.setRect(xpos, ypos, rectW, rectH);

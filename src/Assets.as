@@ -15,6 +15,11 @@ package
 		[Embed(source = "assets/maps/testlevel.oel", mimeType = "application/octet-stream")] 
 		public static const TEST_MAP:Class;
 		
+		
+		// font
+		
+		//[Embed(source = "assets/nokiafc22.ttf", fontFamily = "visitor7pt")] public static const DEFAULT_FONT:Class;
+		
 	}
 
 }

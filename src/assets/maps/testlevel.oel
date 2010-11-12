@@ -2,36 +2,19 @@
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
-    <tile tx="32" ty="0" x="64" y="96"/>
-    <tile tx="32" ty="0" x="80" y="112"/>
-    <tile tx="32" ty="0" x="96" y="80"/>
-    <tile tx="32" ty="0" x="112" y="160"/>
-    <tile tx="48" ty="0" x="16" y="16"/>
-    <tile tx="48" ty="0" x="16" y="32"/>
-    <tile tx="48" ty="0" x="16" y="48"/>
-    <tile tx="48" ty="0" x="16" y="64"/>
-    <tile tx="48" ty="0" x="16" y="80"/>
-    <tile tx="48" ty="0" x="16" y="96"/>
-    <tile tx="48" ty="0" x="16" y="112"/>
-    <tile tx="48" ty="0" x="16" y="128"/>
-    <tile tx="48" ty="0" x="16" y="144"/>
-    <tile tx="48" ty="0" x="16" y="160"/>
-    <tile tx="48" ty="0" x="32" y="160"/>
-    <tile tx="48" ty="0" x="32" y="144"/>
-    <tile tx="48" ty="0" x="32" y="128"/>
-    <tile tx="48" ty="0" x="32" y="112"/>
-    <tile tx="48" ty="0" x="32" y="96"/>
-    <tile tx="48" ty="0" x="32" y="80"/>
-    <tile tx="48" ty="0" x="32" y="64"/>
-    <tile tx="48" ty="0" x="32" y="48"/>
-    <tile tx="48" ty="0" x="32" y="32"/>
-    <tile tx="48" ty="0" x="32" y="16"/>
-    <rect tx="16" ty="0" x="160" y="64" w="80" h="80"/>
-    <rect tx="0" ty="0" x="160" y="16" w="80" h="16"/>
-    <rect tx="0" ty="0" x="208" y="176" w="80" h="16"/>
-    <rect tx="0" ty="0" x="32" y="192" w="48" h="16"/>
+    <tile id="2" x="16" y="80"/>
+    <tile id="2" x="144" y="64"/>
+    <tile id="2" x="192" y="144"/>
+    <tile id="2" x="256" y="64"/>
+    <tile id="3" x="48" y="48"/>
+    <tile id="3" x="64" y="64"/>
+    <tile id="3" x="64" y="48"/>
+    <rect id="1" x="64" y="144" w="48" h="48"/>
+    <rect id="1" x="16" y="128" w="48" h="80"/>
+    <tile id="1" x="96" y="192"/>
+    <rect id="0" x="0" y="0" w="320" h="16"/>
   </terrain>
   <objects>
-    <playerStart x="144" y="192"/>
+    <playerStart x="160" y="112"/>
   </objects>
 </level>
