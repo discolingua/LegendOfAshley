@@ -106,10 +106,12 @@ package entities
 			for each (dataElement in dataList)
 			{
 				exit = new Exit;
-				GameWorld.add(exit);
+				FP.world.add(exit);
 				exit.x = int(dataElement.@x);
 				exit.y = int(dataElement.@y);
-				exit.destRoom = String(dataElement.@destroom);
+				exit.destRoom = String(dataElement.@destRoom);
+				
+				trace(dataElement.@x, dataElement.@y, dataElement.@destRoom);
 			}
 			
 			
