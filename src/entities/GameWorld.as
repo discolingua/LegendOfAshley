@@ -1,14 +1,16 @@
 package entities
 {
 	// This is a class for the room the player starts in.
-	// It might get merged with TerrainMap
-	
+
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
 	
 	public class GameWorld extends World
 	{
-		public function Gameworld():void
+		
+		public static var adventurer:Adventurer;
+		
+		public function GameWorld():void
 		{
 			
 		}
@@ -17,8 +19,9 @@ package entities
 		{
 			FP.screen.color = 0x00C322;
 			
+			adventurer = new Adventurer;
+			add(adventurer);
 			add(new Level(Assets.COURTYARD_MAP));
-//			add(new Adventurer);
 			
 			add(new TextPopup("oh yes that's right"));
 		}

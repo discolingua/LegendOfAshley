@@ -57,16 +57,14 @@ package entities
 			var rectH:int;
 			var tileIndex:int;
 			
-			// set level name
+			// set player start location
 			
 			dataList = xmlData.objects.playerStart;
 			
 			for each (dataElement in dataList) 
 			{
-				xpos = int(dataElement.@x) / Constants.TILE_SIZE;
-				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
-				
-				GameWorld.add(new Adventurer(x, y));
+				GameWorld.adventurer.x = int(dataElement.@x);
+				GameWorld.adventurer.y = int(dataElement.@y);
 			}
 			
 			
