@@ -14,7 +14,8 @@ package entities
 		
 		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 320, 240, 16, 16);
 		public var terrainGrid:Grid = new Grid(320, 240, 16, 16, 0, 0);
-				
+		public var exit:Exit;
+
 		public function Level(xmlLevel:Class):void 
 		{
 			this.graphic = terrainTiles;
@@ -49,7 +50,7 @@ package entities
 			var levelName:String;
 			
 
-			// variables for placement of individual tiles + rectangles
+			// variables for placement of individual tiles + rectangles ***************************************
 			
 			var xpos:int;
 			var ypos:int;
@@ -57,7 +58,7 @@ package entities
 			var rectH:int;
 			var tileIndex:int;
 			
-			// set player start location
+			// set player start location ***********************************************************************
 			
 			dataList = xmlData.objects.playerStart;
 			
@@ -68,7 +69,7 @@ package entities
 			}
 			
 			
-			// loop through individual tiles + place collision grid
+			// loop through individual tiles + place collision grid ********************************************
 			
 			dataList = xmlData.terrain.tile;
 			
@@ -82,7 +83,7 @@ package entities
 				terrainGrid.setTile(xpos, ypos);
 			}
 			
-			// loop through rectangles
+			// loop through rectangles **********************************************************************
 			
 			dataList = xmlData.terrain.rect;
 			
@@ -97,6 +98,20 @@ package entities
 				terrainTiles.setRect(xpos, ypos, rectW, rectH, tileIndex);
 				terrainGrid.setRect(xpos, ypos, rectW, rectH);
 			}
+			
+			// load exits *******************************************************************************
+			
+			dataList = xmlData.objects.exit;
+			
+			for each (dataElement in dataList)
+			{
+				exit = new Exit;
+				GameWorld.add(exit);
+				exit.x = int(dataElement.@x);
+				exit.y = int(dataElement.@y);
+				exit.destRoom = String(dataElement.@destroom);
+			}
+			
 			
 		}
 	}

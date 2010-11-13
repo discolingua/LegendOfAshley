@@ -8,6 +8,7 @@ package
 		
 		[Embed(source = "assets/art/tiles16.png")] public static const SPR_TERRAIN:Class;
 		[Embed(source = "assets/art/adventurer16.png")] public static const SPR_ADVENTURER:Class;
+		[Embed(source = "assets/art/exit.png")] public static const SPR_EXIT:Class;
 		
 		
 		// maps
