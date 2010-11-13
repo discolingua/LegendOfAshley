@@ -1,0 +1,18 @@
+<level roomName="house" description="whose house is this">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <rect id="3" x="0" y="0" w="320" h="16"/>
+    <rect id="3" x="0" y="16" w="16" h="224"/>
+    <rect id="3" x="304" y="16" w="16" h="224"/>
+    <rect id="3" x="16" y="224" w="112" h="16"/>
+    <rect id="3" x="192" y="224" w="112" h="16"/>
+  </terrain>
+  <objects>
+    <playerStart x="144" y="80"/>
+    <exit x="128" y="224" destRoom="courtyard" destPoint=""/>
+    <exit x="144" y="224" destRoom="courtyard" destPoint=""/>
+    <exit x="160" y="224" destRoom="courtyard" destPoint=""/>
+    <exit x="176" y="224" destRoom="courtyard" destPoint=""/>
+  </objects>
+</level>

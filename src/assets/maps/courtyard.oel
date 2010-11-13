@@ -1,0 +1,21 @@
+<level roomName="courtyard" description="this is a courtyard">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <rect id="3" x="304" y="0" w="16" h="112"/>
+    <rect id="3" x="112" y="0" w="192" h="16"/>
+    <rect id="3" x="0" y="0" w="80" h="16"/>
+    <rect id="3" x="0" y="16" w="16" h="64"/>
+    <rect id="3" x="0" y="112" w="16" h="128"/>
+    <rect id="3" x="16" y="224" w="304" h="16"/>
+    <rect id="1" x="64" y="96" w="64" h="64"/>
+    <tile id="2" x="160" y="64"/>
+    <tile id="2" x="224" y="112"/>
+    <tile id="2" x="192" y="176"/>
+  </terrain>
+  <objects>
+    <exit x="80" y="0" destRoom="house"/>
+    <exit x="96" y="0" destRoom="house"/>
+    <playerStart x="160" y="112"/>
+  </objects>
+</level>

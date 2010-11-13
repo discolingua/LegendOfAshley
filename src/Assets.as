@@ -12,8 +12,10 @@ package
 		
 		// maps
 		
-		[Embed(source = "assets/maps/testlevel.oel", mimeType = "application/octet-stream")] 
-		public static const TEST_MAP:Class;
+		[Embed(source = "assets/maps/courtyard.oel", mimeType = "application/octet-stream")] 
+		public static const COURTYARD_MAP:Class;
+		[Embed(source = "assets/maps/house.oel", mimeType = "application/octet-stream")]
+		public static const HOUSE_MAP:Class;
 		
 		
 		// font
