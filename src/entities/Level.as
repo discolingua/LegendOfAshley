@@ -33,12 +33,21 @@ package entities
 		
 		private function loadLevel(xmlLevel:Class):void 
 		{
+			
+			// the xml file (embedded in Assets.as) is converted from a byteArray to a String
+			// and then finally cast as an XML object
+			
 			var rawData:ByteArray = new xmlLevel;
 			var dataString:String = rawData.readUTFBytes( rawData.length );
 			var xmlData:XML = new XML(dataString);
 			
 			var dataList:XMLList;
 			var dataElement:XML;
+			
+			// level name
+			
+			var levelName:String;
+			
 
 			// variables for placement of individual tiles + rectangles
 			
@@ -48,9 +57,22 @@ package entities
 			var rectH:int;
 			var tileIndex:int;
 			
-			dataList = xmlData.terrain.tile;
+			// set level name
+			
+			dataList = xmlData.objects.playerStart;
+			
+			for each (dataElement in dataList) 
+			{
+				xpos = int(dataElement.@x) / Constants.TILE_SIZE;
+				ypos = int(dataElement.@y) / Constants.TILE_SIZE;
+				
+				GameWorld.add(new Adventurer(x, y));
+			}
+			
 			
 			// loop through individual tiles + place collision grid
+			
+			dataList = xmlData.terrain.tile;
 			
 			for each (dataElement in dataList)
 			{

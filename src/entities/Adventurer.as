@@ -10,13 +10,13 @@ package entities
 		private var speed:Number = 150;
 		private var facing:String = "up";
 		
-		public function Adventurer():void 
+		public function Adventurer(myX:int, myY:int):void 
 		{
 			// constructor to set properties of the object
 			
 			graphic = new Image(Assets.SPR_ADVENTURER);
-			x = 304;
-			y = 124;
+			x = myX;
+			y = myY;
 			width = Constants.TILE_SIZE * 0.5;
 			height = Constants.TILE_SIZE;
 			type = "adventurer";

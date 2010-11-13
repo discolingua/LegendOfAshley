@@ -18,7 +18,7 @@ package entities
 			FP.screen.color = 0x00C322;
 			
 			add(new Level(Assets.COURTYARD_MAP));
-			add(new Adventurer);
+//			add(new Adventurer);
 			
 			add(new TextPopup("oh yes that's right"));
 		}
