@@ -82,12 +82,13 @@ package entities
 			{
 				trace("***");
 				
-				world.getClass(Level, levelList);
-				for each(var l:Level in levelList)
-				{
-					trace("^^^");
-					
-				}
+				world.removeAll();
+				FP.world = new GameWorld;
+				//for each(var l:Level in levelList)
+				//{
+					//trace("^^^");
+					//
+				//}
 			}
 			
 			if (collide("terraingrid", position.x, position.y))
