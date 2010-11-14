@@ -2,17 +2,56 @@
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
-    <rect id="3" x="0" y="0" w="320" h="16"/>
     <rect id="3" x="0" y="16" w="16" h="224"/>
     <rect id="3" x="304" y="16" w="16" h="224"/>
     <rect id="3" x="16" y="224" w="112" h="16"/>
     <rect id="3" x="192" y="224" w="112" h="16"/>
+    <tile id="5" x="112" y="0"/>
+    <tile id="5" x="192" y="0"/>
+    <tile id="3" x="96" y="0"/>
+    <tile id="3" x="80" y="0"/>
+    <tile id="3" x="64" y="0"/>
+    <tile id="3" x="48" y="0"/>
+    <tile id="3" x="32" y="0"/>
+    <tile id="3" x="16" y="0"/>
+    <tile id="3" x="0" y="0"/>
+    <tile id="3" x="128" y="0"/>
+    <tile id="3" x="144" y="0"/>
+    <tile id="3" x="144" y="16"/>
+    <tile id="3" x="144" y="32"/>
+    <tile id="3" x="160" y="0"/>
+    <tile id="3" x="176" y="0"/>
+    <tile id="3" x="208" y="0"/>
+    <tile id="3" x="160" y="16"/>
+    <tile id="3" x="160" y="32"/>
+    <tile id="3" x="224" y="0"/>
+    <tile id="3" x="240" y="0"/>
+    <tile id="3" x="256" y="0"/>
+    <tile id="3" x="272" y="0"/>
+    <tile id="3" x="288" y="0"/>
+    <tile id="3" x="304" y="0"/>
+    <tile id="3" x="144" y="64"/>
+    <tile id="3" x="160" y="64"/>
+    <tile id="3" x="160" y="48"/>
+    <tile id="3" x="144" y="48"/>
+    <tile id="3" x="128" y="80"/>
+    <tile id="3" x="144" y="80"/>
+    <tile id="3" x="160" y="80"/>
+    <tile id="3" x="176" y="80"/>
+    <tile id="3" x="192" y="80"/>
+    <tile id="3" x="112" y="80"/>
+    <tile id="3" x="16" y="80"/>
+    <tile id="3" x="32" y="80"/>
+    <tile id="3" x="288" y="80"/>
+    <tile id="3" x="272" y="80"/>
+    <tile id="4" x="64" y="48"/>
+    <tile id="4" x="240" y="48"/>
   </terrain>
   <objects>
-    <playerStart x="144" y="80"/>
     <exit x="128" y="224" destRoom="courtyard" destPoint=""/>
     <exit x="144" y="224" destRoom="courtyard" destPoint=""/>
     <exit x="160" y="224" destRoom="courtyard" destPoint=""/>
     <exit x="176" y="224" destRoom="courtyard" destPoint=""/>
+    <playerStart x="144" y="176"/>
   </objects>
 </level>

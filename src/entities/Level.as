@@ -35,7 +35,8 @@ package entities
 		private function loadLevel(xmlLevel:Class):void 
 		{
 			// this function is the big money heavy hitter which loads in the tilemap / objects for each room
-			
+			// I thought about splitting it into separate functions for loadExits, loadTilemap etc. 
+			// but for the moment I am only calling the whole thing top down once per room
 			
 			// the xml file (embedded in Assets.as) is converted from a byteArray to a String
 			// and then finally cast as an XML object
@@ -52,15 +53,21 @@ package entities
 			var levelName:String;
 			
 
-			// variables for placement of individual tiles + rectangles ***************************************
+			// variables for placement of individual objects + rectangles **********************************
 			
 			var xpos:int;
 			var ypos:int;
 			var rectW:int;
 			var rectH:int;
 			var tileIndex:int;
+
+			// get room description etc. *******************************************************************
+
+			trace(xmlData.@description);
+
 			
-			// set player start location ***********************************************************************
+			
+			// set player start location *******************************************************************
 			
 			dataList = xmlData.objects.playerStart;
 			
@@ -71,7 +78,7 @@ package entities
 			}
 			
 			
-			// loop through individual tiles + place collision grid ********************************************
+			// loop through individual tiles + place collision grid ****************************************
 			
 			dataList = xmlData.terrain.tile;
 			
@@ -85,7 +92,7 @@ package entities
 				terrainGrid.setTile(xpos, ypos);
 			}
 			
-			// loop through rectangles **********************************************************************
+			// loop through rectangles ******************************************************************
 			
 			dataList = xmlData.terrain.rect;
 			
@@ -111,6 +118,7 @@ package entities
 				(FP.world as GameWorld).add(exit);
 				exit.x = int(dataElement.@x);
 				exit.y = int(dataElement.@y);
+				exit.graphic.visible = false;
 				exit.destRoom = String(dataElement.@destRoom);
 			}
 			

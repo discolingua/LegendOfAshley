@@ -17,7 +17,8 @@ package
 		public static const COURTYARD_MAP:Class;
 		[Embed(source = "assets/maps/house.oel", mimeType = "application/octet-stream")]
 		public static const HOUSE_MAP:Class;
-		
+		[Embed(source = "assets/maps/eastroad.oel", mimeType = "application/octet-stream")]
+		public static const EASTROAD_MAP:Class;
 		
 		// font
 		
