@@ -7,10 +7,11 @@ package entities
 	
 	public class GameWorld extends World
 	{
+		public var mapName:String;
 		
-		public function GameWorld():void
+		public function GameWorld(newMap:String):void
 		{
-			
+			mapName = newMap;
 		}
 		
 		override public function begin():void
@@ -20,10 +21,10 @@ package entities
 			Globals.adventurer = new Adventurer;
 			add(Globals.adventurer);
 			
-			Globals.level = new Level(Assets.COURTYARD_MAP);
+			Globals.level = new Level(Globals.locations[mapName]);
 			add(Globals.level);
 			
-			add(new TextPopup("oh yes that's right"));
+			add(new TextPopup(mapName));
 		}
 		
 		override public function update():void 

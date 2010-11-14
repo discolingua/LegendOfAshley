@@ -76,20 +76,21 @@ package entities
 		
 		private function colliding(position:Point):Boolean 
 		{
+			
+			// first check to see if the player hit any exits
+			
+			var myExit:Exit = collide("exit", position.x, position.y) as Exit;
 			var levelList:Array = [];
 			
-			if (collide("exit", position.x, position.y))
+			if (myExit)
 			{
-				trace("***");
+				// destroy all instances in the current world, then send
+				// the player to destination room
 				
 				world.removeAll();
-				FP.world = new GameWorld;
-				//for each(var l:Level in levelList)
-				//{
-					//trace("^^^");
-					//
-				//}
+				FP.world = new GameWorld(myExit.destRoom);
 			}
+			
 			
 			if (collide("terraingrid", position.x, position.y))
 			{

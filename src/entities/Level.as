@@ -112,7 +112,6 @@ package entities
 				exit.x = int(dataElement.@x);
 				exit.y = int(dataElement.@y);
 				exit.destRoom = String(dataElement.@destRoom);
-				
 			}
 			
 			
