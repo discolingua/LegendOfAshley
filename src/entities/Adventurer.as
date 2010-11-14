@@ -76,6 +76,20 @@ package entities
 		
 		private function colliding(position:Point):Boolean 
 		{
+			var levelList:Array = [];
+			
+			if (collide("exit", position.x, position.y))
+			{
+				trace("***");
+				
+				world.getClass(Level, levelList);
+				for each(var l:Level in levelList)
+				{
+					trace("^^^");
+					
+				}
+			}
+			
 			if (collide("terraingrid", position.x, position.y))
 			{
 				// give wall collisions a bit of bounce

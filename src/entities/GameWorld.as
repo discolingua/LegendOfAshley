@@ -8,8 +8,6 @@ package entities
 	public class GameWorld extends World
 	{
 		
-		public static var adventurer:Adventurer;
-		
 		public function GameWorld():void
 		{
 			
@@ -19,9 +17,11 @@ package entities
 		{
 			FP.screen.color = 0x00C322;
 			
-			adventurer = new Adventurer;
-			add(adventurer);
-			add(new Level(Assets.COURTYARD_MAP));
+			Globals.adventurer = new Adventurer;
+			add(Globals.adventurer);
+			
+			Globals.level = new Level(Assets.COURTYARD_MAP);
+			add(Globals.level);
 			
 			add(new TextPopup("oh yes that's right"));
 		}

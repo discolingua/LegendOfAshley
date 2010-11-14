@@ -34,6 +34,8 @@ package entities
 		
 		private function loadLevel(xmlLevel:Class):void 
 		{
+			// this function is the big money heavy hitter which loads in the tilemap / objects for each room
+			
 			
 			// the xml file (embedded in Assets.as) is converted from a byteArray to a String
 			// and then finally cast as an XML object
@@ -64,8 +66,8 @@ package entities
 			
 			for each (dataElement in dataList) 
 			{
-				GameWorld.adventurer.x = int(dataElement.@x);
-				GameWorld.adventurer.y = int(dataElement.@y);
+				Globals.adventurer.x = int(dataElement.@x);
+				Globals.adventurer.y = int(dataElement.@y);
 			}
 			
 			
@@ -106,12 +108,11 @@ package entities
 			for each (dataElement in dataList)
 			{
 				exit = new Exit;
-				FP.world.add(exit);
+				(FP.world as GameWorld).add(exit);
 				exit.x = int(dataElement.@x);
 				exit.y = int(dataElement.@y);
 				exit.destRoom = String(dataElement.@destRoom);
 				
-				trace(dataElement.@x, dataElement.@y, dataElement.@destRoom);
 			}
 			
 			
