@@ -51,6 +51,7 @@ package entities
 			// level name
 			
 			var levelName:String;
+			var levelDesc:String;
 			
 
 			// variables for placement of individual objects + rectangles **********************************
@@ -63,8 +64,14 @@ package entities
 
 			// get room description etc. *******************************************************************
 
-			(FP.world as GameWorld).add(new TextPopup(xmlData.@description));
-			trace(xmlData.@description);
+			levelDesc = xmlData.@description;
+			
+			levelDesc = levelDesc.replace( Constants.DELIMITER, "\n");
+			
+			
+			(FP.world as GameWorld).add(new TextPopup(levelDesc));
+			
+			trace(levelDesc);
 
 			
 			// set player start location *******************************************************************
