@@ -4,7 +4,7 @@ package entities
 
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
-	
+		
 	public class GameWorld extends World
 	{
 		public var mapName:String;
@@ -21,10 +21,12 @@ package entities
 			Globals.adventurer = new Adventurer;
 			add(Globals.adventurer);
 			
-			Globals.level = new Level(Globals.locations[mapName]);
+			
+			
+			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
 			
-			add(new TextPopup(mapName));
+
 		}
 		
 		override public function update():void 

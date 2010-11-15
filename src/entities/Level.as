@@ -63,9 +63,9 @@ package entities
 
 			// get room description etc. *******************************************************************
 
-			trace(xmlData.@description);
+			Globals.textBlock = xmlData.@description.split('|');
+			trace(Globals.textBlock[0]);
 
-			
 			
 			// set player start location *******************************************************************
 			

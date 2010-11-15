@@ -91,7 +91,6 @@ package entities
 				FP.world = new GameWorld(myExit.destRoom);
 			}
 			
-			
 			if (collide("terraingrid", position.x, position.y))
 			{
 				// give wall collisions a bit of bounce

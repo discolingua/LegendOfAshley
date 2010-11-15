@@ -14,11 +14,11 @@ package
 		// maps
 		
 		[Embed(source = "assets/maps/courtyard.oel", mimeType = "application/octet-stream")] 
-		public static const COURTYARD_MAP:Class;
+		public static const MAP_COURTYARD:Class;
 		[Embed(source = "assets/maps/house.oel", mimeType = "application/octet-stream")]
-		public static const HOUSE_MAP:Class;
+		public static const MAP_HOUSE:Class;
 		[Embed(source = "assets/maps/eastroad.oel", mimeType = "application/octet-stream")]
-		public static const EASTROAD_MAP:Class;
+		public static const MAP_EASTROAD:Class;
 		
 		// font
 		
