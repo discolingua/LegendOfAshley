@@ -63,8 +63,8 @@ package entities
 
 			// get room description etc. *******************************************************************
 
-			Globals.textBlock = xmlData.@description.split('|');
-			trace(Globals.textBlock[0]);
+			(FP.world as GameWorld).add(new TextPopup(xmlData.@description));
+			trace(xmlData.@description);
 
 			
 			// set player start location *******************************************************************

@@ -15,17 +15,20 @@ package entities
 
 		private var t:Text;
 		private var display:Graphiclist;
+		private var myText:Array = [];
+		private var myLine:int = 0;
 		
-		public function TextPopup(myText:String):void 
+		public function TextPopup(myTextString:String):void 
 		{
+			trace("yerp");
+			
 			Text.font = "visitor1";
 			Text.size = 24;
 		
 			layer = -100;
 			
-			t = new Text(myText,20,20);
+			t = new Text(myTextString,20,20);
 			t.color = 0x007f16;
-			
 			display = new Graphiclist(t);
 			
 			graphic = display;

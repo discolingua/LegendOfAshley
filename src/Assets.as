@@ -5,9 +5,12 @@ package
 	public class Assets 
 	{
 		// tiles and sprites
-		
+				
 		[Embed(source = "assets/art/tiles16.png")] public static const SPR_TERRAIN:Class;
 		[Embed(source = "assets/art/adventurer16.png")] public static const SPR_ADVENTURER:Class;
+		
+		// the exit sprite is not visible to the player
+		
 		[Embed(source = "assets/art/exit.png")] public static const SPR_EXIT:Class;
 		
 		
