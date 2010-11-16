@@ -53,7 +53,6 @@ package entities
 			var levelName:String;
 			var levelDesc:String;
 			
-
 			// variables for placement of individual objects + rectangles **********************************
 			
 			var xpos:int;
@@ -61,18 +60,12 @@ package entities
 			var rectW:int;
 			var rectH:int;
 			var tileIndex:int;
-
-			// get room description etc. *******************************************************************
-
+		
+			// convert "|" to newline to create a multiline TextPopup for room text ************************
+			
 			levelDesc = xmlData.@description;
-			
 			levelDesc = levelDesc.replace( Constants.DELIMITER, "\n");
-			
-			
 			(FP.world as GameWorld).add(new TextPopup(levelDesc));
-			
-			trace(levelDesc);
-
 			
 			// set player start location *******************************************************************
 			
@@ -99,7 +92,7 @@ package entities
 				terrainGrid.setTile(xpos, ypos);
 			}
 			
-			// loop through rectangles ******************************************************************
+			// loop through grid rectangles ***************************************************************
 			
 			dataList = xmlData.terrain.rect;
 			

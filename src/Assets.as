@@ -5,16 +5,25 @@ package
 	public class Assets 
 	{
 		// tiles and sprites
-				
+		
 		[Embed(source = "assets/art/tiles16.png")] public static const SPR_TERRAIN:Class;
 		[Embed(source = "assets/art/adventurer16.png")] public static const SPR_ADVENTURER:Class;
+		[Embed(source = "assets/art/badfairy8x12.png")] public static const SPR_BADFAIRY:Class;
 		
-		// the exit sprite is not visible to the player
+		// the exit sprite is set visible=false by the Level.loadLevel function
 		
 		[Embed(source = "assets/art/exit.png")] public static const SPR_EXIT:Class;
 		
+		// maps. Each map also should have a data dictionary entry in Constants.as
 		
-		// maps
+		[Embed(source = "assets/maps/intro1.oel", mimeType = "application/octet-stream")]
+		public static const MAP_INTRO1:Class;
+		[Embed(source = "assets/maps/intro2.oel", mimeType = "application/octet-stream")]
+		public static const MAP_INTRO2:Class;
+		[Embed(source = "assets/maps/intro3.oel", mimeType = "application/octet-stream")]
+		public static const MAP_INTRO3:Class;		
+		[Embed(source = "assets/maps/intro4.oel", mimeType = "application/octet-stream")]
+		public static const MAP_INTRO4:Class;				
 		
 		[Embed(source = "assets/maps/courtyard.oel", mimeType = "application/octet-stream")] 
 		public static const MAP_COURTYARD:Class;

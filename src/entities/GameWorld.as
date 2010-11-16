@@ -1,7 +1,8 @@
 package entities
 {
-	// This is a class for the room the player starts in.
-
+	// GameWorld.as is the top-level class under Main, it contains all other instances and is destroyed & recreated
+	// whenever a room exit is touched
+	
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
 		
@@ -18,15 +19,15 @@ package entities
 		{
 			FP.screen.color = 0x00C322;
 			
+			// add
+			
 			Globals.adventurer = new Adventurer;
 			add(Globals.adventurer);
-			
-			
 			
 			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
 			
-
+//			checkSpecialRooms(mapName);
 		}
 		
 		override public function update():void 

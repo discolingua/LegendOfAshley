@@ -1,0 +1,60 @@
+<level roomName="intro3" description="'Gribbl got a new|pink dress and went|to the club. Only|some bad fairies">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <tile id="13" x="0" y="144"/>
+    <tile id="13" x="16" y="144"/>
+    <tile id="13" x="32" y="144"/>
+    <tile id="13" x="48" y="144"/>
+    <tile id="13" x="64" y="144"/>
+    <tile id="13" x="80" y="144"/>
+    <tile id="13" x="96" y="144"/>
+    <tile id="13" x="112" y="144"/>
+    <tile id="13" x="128" y="144"/>
+    <tile id="13" x="144" y="144"/>
+    <tile id="13" x="160" y="144"/>
+    <tile id="13" x="176" y="144"/>
+    <tile id="13" x="192" y="144"/>
+    <tile id="13" x="208" y="144"/>
+    <tile id="13" x="224" y="144"/>
+    <tile id="13" x="240" y="144"/>
+    <tile id="13" x="256" y="144"/>
+    <tile id="13" x="272" y="144"/>
+    <tile id="13" x="288" y="144"/>
+    <tile id="13" x="304" y="144"/>
+    <tile id="3" x="0" y="160"/>
+    <tile id="3" x="0" y="192"/>
+    <tile id="3" x="0" y="224"/>
+    <tile id="3" x="16" y="224"/>
+    <tile id="3" x="32" y="224"/>
+    <tile id="3" x="48" y="224"/>
+    <tile id="3" x="64" y="224"/>
+    <tile id="3" x="80" y="224"/>
+    <tile id="3" x="96" y="224"/>
+    <tile id="3" x="112" y="224"/>
+    <tile id="3" x="128" y="224"/>
+    <tile id="3" x="144" y="224"/>
+    <tile id="3" x="160" y="224"/>
+    <tile id="3" x="176" y="224"/>
+    <tile id="3" x="192" y="224"/>
+    <tile id="3" x="208" y="224"/>
+    <tile id="3" x="224" y="224"/>
+    <tile id="3" x="240" y="224"/>
+    <tile id="3" x="256" y="224"/>
+    <tile id="3" x="272" y="224"/>
+    <tile id="3" x="288" y="224"/>
+    <tile id="3" x="304" y="224"/>
+    <tile id="15" x="0" y="176"/>
+    <tile id="15" x="0" y="208"/>
+    <tile id="8" x="48" y="208"/>
+    <tile id="12" x="16" y="192"/>
+    <tile id="4" x="160" y="208"/>
+  </terrain>
+  <objects>
+    <playerStart x="48" y="176"/>
+    <exit x="304" y="160" destRoom="intro4"/>
+    <exit x="304" y="176" destRoom="intro4"/>
+    <exit x="304" y="192" destRoom="intro4"/>
+    <exit x="304" y="208" destRoom="intro4"/>
+  </objects>
+</level>
