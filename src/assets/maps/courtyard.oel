@@ -1,4 +1,4 @@
-<level roomName="courtyard" description="this is a courtyard|here is a line|here's one more">
+<level roomName="courtyard" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">

@@ -27,7 +27,7 @@ package entities
 			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
 			
-//			checkSpecialRooms(mapName);
+			checkSpecialRooms(mapName);
 		}
 		
 		override public function update():void 
@@ -39,5 +39,24 @@ package entities
 		{
 			super.render();
 		}
+		
+		private function checkSpecialRooms(myMap:String):void
+		{
+			trace("jklfsjklf");
+			
+			switch (myMap) 
+			{
+				case "intro1":
+				trace("flkjjkldsf");
+				var musicLoop:Sfx;
+				musicLoop = new Sfx(Assets.MUS_INTRO);
+				musicLoop.loop();
+				break;
+				default:
+					// do nothing
+				break;
+			}
+		}
+		
 	}
 }

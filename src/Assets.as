@@ -14,6 +14,9 @@ package
 		
 		[Embed(source = "assets/art/exit.png")] public static const SPR_EXIT:Class;
 		
+		
+		
+		
 		// maps. Each map also should have a data dictionary entry in Constants.as
 		
 		[Embed(source = "assets/maps/intro1.oel", mimeType = "application/octet-stream")]
@@ -31,6 +34,15 @@ package
 		public static const MAP_HOUSE:Class;
 		[Embed(source = "assets/maps/eastroad.oel", mimeType = "application/octet-stream")]
 		public static const MAP_EASTROAD:Class;
+		
+		
+		
+		// music
+		
+		[Embed(source = "assets/music/mus_intro.mp3")] public static const MUS_INTRO:Class;
+		[Embed(source = "assets/music/mus_woods.mp3")] public static const MUS_WOODS:Class;
+		
+		
 		
 		// font
 		
