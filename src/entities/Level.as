@@ -48,7 +48,7 @@ package entities
 			var dataList:XMLList;
 			var dataElement:XML;
 			
-			// level name
+			// level name and description ****************************************************************
 			
 			var levelName:String;
 			var levelDesc:String;
@@ -61,7 +61,10 @@ package entities
 			var rectH:int;
 			var tileIndex:int;
 
+			// set background color (defaults to 0x000000 if undefined in xml) *****************************
+			
 			FP.screen.color = xmlData.@bgColor;
+			
 			
 			// convert "|" to newline to create a multiline TextPopup for room text ************************
 			
