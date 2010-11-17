@@ -27,6 +27,7 @@ package entities
 			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
 			
+			
 			checkSpecialRooms(mapName);
 		}
 		

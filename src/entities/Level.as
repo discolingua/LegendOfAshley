@@ -60,7 +60,9 @@ package entities
 			var rectW:int;
 			var rectH:int;
 			var tileIndex:int;
-		
+
+			FP.screen.color = xmlData.@bgColor;
+			
 			// convert "|" to newline to create a multiline TextPopup for room text ************************
 			
 			levelDesc = xmlData.@description;
