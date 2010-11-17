@@ -23,7 +23,9 @@ package
 			courtyard: Assets.MAP_COURTYARD,
 			tavern: Assets.MAP_TAVERN,
 			house: Assets.MAP_HOUSE,
-			eastroad: Assets.MAP_EASTROAD
+			eastroad: Assets.MAP_EASTROAD,
+			outsidehut: Assets.MAP_OUTSIDEHUT,
+			insidehut: Assets.MAP_INSIDEHUT
 		};
 		
 	}

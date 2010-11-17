@@ -15,6 +15,8 @@ package entities
 		public var terrainTiles:Tilemap = new Tilemap(Assets.SPR_TERRAIN, 320, 240, 16, 16);
 		public var terrainGrid:Grid = new Grid(320, 240, 16, 16, 0, 0);
 		public var exit:Exit;
+		public var npc:NPC;
+		public var spawn:BadFairySpawn;
 
 		public function Level(xmlLevel:Class):void 
 		{
@@ -127,6 +129,30 @@ package entities
 				exit.destRoom = String(dataElement.@destRoom);
 			}
 			
+			// monster spawns ***************************************************************************
+			
+			dataList = xmlData.objects.spawn;
+			
+			for each (dataElement in dataList)
+			{
+				spawn = new BadFairySpawn;
+				(FP.world as GameWorld).add(spawn);
+				spawn.x = int(dataElement.@x);
+				spawn.y = int(dataElement.@y);
+			}
+			
+			// NPCs (to talk to etc.) *******************************************************************
+			
+			dataList = xmlData.objects.npc;
+			
+			for each (dataElement in dataList)
+			{
+				npc = new NPC;
+				(FP.world as GameWorld).add(npc);
+				npc.x = int(dataElement.@x);
+				npc.y = int(dataElement.@y);
+				npc.spokenText = String(dataElement.@spokenText);
+			}
 			
 		}
 	}

@@ -11,7 +11,9 @@ package
 		// individual sprites
 		
 		[Embed(source = "assets/art/adventurer16.png")] public static const SPR_ADVENTURER:Class;
+		[Embed(source = "assets/art/bystander816.png")] public static const SPR_BYSTANDER:Class;
 		[Embed(source = "assets/art/badfairy8x12.png")] public static const SPR_BADFAIRY:Class;
+		[Embed(source = "assets/art/badfairyspawn.png")] public static const SPR_BADFAIRYSPAWN:Class;
 		[Embed(source = "assets/art/fgss32.png")] public static const SPR_GOODFAIRY:Class;
 		
 		// the exit sprite is set visible=false by the Level.loadLevel function
@@ -42,8 +44,10 @@ package
 		public static const MAP_TAVERN:Class;
 		[Embed(source = "assets/maps/eastroad.oel", mimeType = "application/octet-stream")]
 		public static const MAP_EASTROAD:Class;
-		
-		
+		[Embed (source = "assets/maps/forest/outsidehut.oel", mimeType = "application/octet-stream")]
+		public static const MAP_OUTSIDEHUT:Class;
+		[Embed (source = "assets/maps/forest/insidehut.oel", mimeType = "application/octet-stream")]
+		public static const MAP_INSIDEHUT:Class;
 		
 		// music
 		

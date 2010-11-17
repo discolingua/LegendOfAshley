@@ -1,4 +1,4 @@
-<level roomName="" description="">
+<level roomName="" bgColor="" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
@@ -35,12 +35,17 @@
     <tile id="2" x="80" y="176"/>
   </terrain>
   <objects>
-    <exit x="0" y="128" destRoom="courtyard" destPoint=""/>
-    <exit x="0" y="144" destRoom="courtyard" destPoint=""/>
-    <exit x="0" y="160" destRoom="courtyard" destPoint=""/>
-    <exit x="0" y="176" destRoom="courtyard" destPoint=""/>
-    <exit x="0" y="208" destRoom="courtyard" destPoint=""/>
-    <exit x="0" y="192" destRoom="courtyard" destPoint=""/>
+    <exit x="0" y="128" destRoom="courtyard"/>
+    <exit x="0" y="144" destRoom="courtyard"/>
+    <exit x="0" y="160" destRoom="courtyard"/>
+    <exit x="0" y="176" destRoom="courtyard"/>
+    <exit x="0" y="208" destRoom="courtyard"/>
+    <exit x="0" y="192" destRoom="courtyard"/>
     <playerStart x="64" y="112"/>
+    <exit x="112" y="0" destRoom="outsidehut"/>
+    <exit x="128" y="0" destRoom="outsidehut"/>
+    <exit x="144" y="0" destRoom="outsidehut"/>
+    <exit x="160" y="0" destRoom="outsidehut"/>
+    <exit x="176" y="0" destRoom=""/>
   </objects>
 </level>
