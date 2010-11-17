@@ -46,11 +46,13 @@ package entities
 			switch (myMap) 
 			{
 				case "intro1":
-				var musicLoop:Sfx;
-				musicLoop = new Sfx(Assets.MUS_INTRO);
-				musicLoop.loop();
-				add(new GoodFairy);
-				break;
+					Globals.musicLoop = new Sfx(Assets.MUS_INTRO);
+					Globals.musicLoop.loop();				
+				case "intro2":
+				case "intro3":
+				case "intro4":
+					add(new GoodFairy);
+					break;
 				default:
 					// do nothing
 				break;

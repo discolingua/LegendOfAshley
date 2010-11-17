@@ -5,6 +5,7 @@ package entities
 	
 	public class GoodFairy extends Entity
 	{
+		private var speed:Number = 20;
 		
 		public function GoodFairy() 
 		{
@@ -14,6 +15,14 @@ package entities
 			width = 32;
 			height = 32;
 			type = "ally";
+		}
+		
+		override public function update():void 
+		{
+			// drift slowly to the right (speed 20 is good)
+			
+			var mySpeed:Number = FP.elapsed * speed;
+			x += mySpeed;
 		}
 		
 	}

@@ -1,9 +1,15 @@
 package  
 {
 	import entities.*;
+	import net.flashpunk.*;
 	
 	public class Globals 
 	{
+		
+		// only one music loop needed, set e.g. in GameWorld.checkSpecialRooms
+		
+		public static var musicLoop:Sfx;
+		
 
 		// the main objects for player + map + text panel
 		
