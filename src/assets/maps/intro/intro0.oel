@@ -1,0 +1,92 @@
+<level roomName="intro0" description="Arrows move.|Please be 13|or older to|play.|||||discolingua.com">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <tile id="7" x="240" y="112"/>
+    <tile id="7" x="224" y="96"/>
+    <tile id="7" x="224" y="112"/>
+    <tile id="7" x="224" y="128"/>
+    <tile id="7" x="208" y="144"/>
+    <tile id="7" x="208" y="128"/>
+    <tile id="7" x="208" y="112"/>
+    <tile id="7" x="208" y="96"/>
+    <tile id="7" x="208" y="80"/>
+    <tile id="7" x="192" y="64"/>
+    <tile id="7" x="192" y="80"/>
+    <tile id="7" x="192" y="96"/>
+    <tile id="7" x="192" y="112"/>
+    <tile id="7" x="192" y="128"/>
+    <tile id="7" x="192" y="144"/>
+    <tile id="7" x="192" y="160"/>
+    <rect id="7" x="144" y="96" w="48" h="48"/>
+    <tile id="13" x="0" y="0"/>
+    <tile id="13" x="32" y="0"/>
+    <tile id="13" x="64" y="0"/>
+    <tile id="13" x="96" y="0"/>
+    <tile id="13" x="128" y="0"/>
+    <tile id="13" x="160" y="0"/>
+    <tile id="13" x="192" y="0"/>
+    <tile id="13" x="224" y="0"/>
+    <tile id="13" x="256" y="0"/>
+    <tile id="13" x="288" y="0"/>
+    <tile id="10" x="16" y="0"/>
+    <tile id="10" x="48" y="0"/>
+    <tile id="10" x="80" y="0"/>
+    <tile id="10" x="112" y="0"/>
+    <tile id="10" x="144" y="0"/>
+    <tile id="10" x="176" y="0"/>
+    <tile id="10" x="208" y="0"/>
+    <tile id="10" x="240" y="0"/>
+    <tile id="10" x="272" y="0"/>
+    <tile id="10" x="304" y="0"/>
+    <tile id="10" x="304" y="32"/>
+    <tile id="10" x="304" y="64"/>
+    <tile id="10" x="0" y="16"/>
+    <tile id="10" x="0" y="48"/>
+    <tile id="10" x="0" y="80"/>
+    <tile id="10" x="0" y="112"/>
+    <tile id="10" x="0" y="144"/>
+    <tile id="10" x="0" y="176"/>
+    <tile id="10" x="0" y="208"/>
+    <tile id="10" x="16" y="224"/>
+    <tile id="10" x="48" y="224"/>
+    <tile id="10" x="80" y="224"/>
+    <tile id="10" x="112" y="224"/>
+    <tile id="10" x="144" y="224"/>
+    <tile id="10" x="176" y="224"/>
+    <tile id="10" x="208" y="224"/>
+    <tile id="10" x="240" y="224"/>
+    <tile id="10" x="272" y="224"/>
+    <tile id="10" x="304" y="224"/>
+    <tile id="10" x="304" y="192"/>
+    <tile id="10" x="304" y="160"/>
+    <tile id="13" x="0" y="32"/>
+    <tile id="13" x="0" y="64"/>
+    <tile id="13" x="0" y="96"/>
+    <tile id="13" x="0" y="128"/>
+    <tile id="13" x="0" y="160"/>
+    <tile id="13" x="0" y="192"/>
+    <tile id="13" x="0" y="224"/>
+    <tile id="13" x="32" y="224"/>
+    <tile id="13" x="64" y="224"/>
+    <tile id="13" x="96" y="224"/>
+    <tile id="13" x="128" y="224"/>
+    <tile id="13" x="160" y="224"/>
+    <tile id="13" x="192" y="224"/>
+    <tile id="13" x="224" y="224"/>
+    <tile id="13" x="256" y="224"/>
+    <tile id="13" x="288" y="224"/>
+    <tile id="13" x="304" y="208"/>
+    <tile id="13" x="304" y="176"/>
+    <tile id="13" x="304" y="48"/>
+    <tile id="13" x="304" y="16"/>
+  </terrain>
+  <objects>
+    <playerStart x="48" y="176"/>
+    <exit x="304" y="80" destRoom=""/>
+    <exit x="304" y="96" destRoom="intro1"/>
+    <exit x="304" y="112" destRoom="intro1"/>
+    <exit x="304" y="128" destRoom="intro1"/>
+    <exit x="304" y="144" destRoom="intro1"/>
+  </objects>
+</level>

@@ -15,11 +15,13 @@ package
 		
 		public static const locations:Object =
 		{
+			intro0: Assets.MAP_INTRO0,
 			intro1: Assets.MAP_INTRO1,
 			intro2: Assets.MAP_INTRO2,
 			intro3: Assets.MAP_INTRO3,
 			intro4: Assets.MAP_INTRO4,
 			courtyard: Assets.MAP_COURTYARD,
+			tavern: Assets.MAP_TAVERN,
 			house: Assets.MAP_HOUSE,
 			eastroad: Assets.MAP_EASTROAD
 		};

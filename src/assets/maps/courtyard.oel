@@ -18,7 +18,7 @@
     <exit x="96" y="0" destRoom="house" destPoint=""/>
     <playerStart x="160" y="112"/>
     <exit x="0" y="80" destRoom="tavern" destPoint=""/>
-    <exit x="0" y="96" destRoom="" destPoint=""/>
+    <exit x="0" y="96" destRoom="tavern" destPoint=""/>
     <exit x="304" y="112" destRoom="eastroad" destPoint=""/>
     <exit x="304" y="128" destRoom="eastroad" destPoint=""/>
     <exit x="304" y="144" destRoom="eastroad" destPoint=""/>

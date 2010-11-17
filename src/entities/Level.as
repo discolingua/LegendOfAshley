@@ -78,7 +78,7 @@ package entities
 			}
 			
 			
-			// loop through individual tiles + place collision grid ****************************************
+			// loop through tiles + place collision grid; everything on the "terrain" layer is solid *****
 			
 			dataList = xmlData.terrain.tile;
 			

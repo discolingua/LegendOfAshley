@@ -20,11 +20,9 @@ package entities
 		
 		public function TextPopup(myTextString:String):void 
 		{
-			trace("yerp");
-			
 			Text.font = "visitor1";
 			Text.size = 24;
-		
+
 			layer = -100;
 			
 			t = new Text(myTextString,20,20);

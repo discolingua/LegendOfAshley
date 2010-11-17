@@ -11,7 +11,7 @@ package
 		{
 			super(320, 240, 60, false);
 			FP.screen.scale = 2;
-			FP.world = new GameWorld("intro1");
+			FP.world = new GameWorld("intro0");
 		}
 	}
 	

@@ -42,15 +42,13 @@ package entities
 		
 		private function checkSpecialRooms(myMap:String):void
 		{
-			trace("jklfsjklf");
-			
 			switch (myMap) 
 			{
 				case "intro1":
-				trace("flkjjkldsf");
 				var musicLoop:Sfx;
 				musicLoop = new Sfx(Assets.MUS_INTRO);
 				musicLoop.loop();
+				add(new GoodFairy);
 				break;
 				default:
 					// do nothing
