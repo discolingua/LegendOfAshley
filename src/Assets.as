@@ -52,7 +52,7 @@ package
 		// music
 		
 		[Embed(source = "assets/music/mus_intro.mp3")] public static const MUS_INTRO:Class;
-		// [Embed(source = "assets/music/mus_woods.mp3")] public static const MUS_WOODS:Class;
+		[Embed(source = "assets/music/mus_woods.mp3")] public static const MUS_WOODS:Class;
 		
 		
 		

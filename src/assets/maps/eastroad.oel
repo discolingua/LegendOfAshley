@@ -1,4 +1,4 @@
-<level roomName="" bgColor="" description="">
+<level roomName="eastroad" bgColor="0x00c322" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
@@ -47,5 +47,6 @@
     <exit x="144" y="0" destRoom="outsidehut"/>
     <exit x="160" y="0" destRoom="outsidehut"/>
     <exit x="176" y="0" destRoom=""/>
+    <badFairySpawn x="288" y="176"/>
   </objects>
 </level>

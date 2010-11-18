@@ -128,5 +128,6 @@
     <exit x="208" y="224" destRoom="eastroad"/>
     <exit x="144" y="96" destRoom="insidehut"/>
     <exit x="160" y="96" destRoom="insidehut"/>
+    <playerStart x="144" y="176"/>
   </objects>
 </level>

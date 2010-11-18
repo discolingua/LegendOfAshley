@@ -46,17 +46,28 @@ package entities
 			switch (myMap) 
 			{
 				case "intro1":
-					Globals.musicLoop = new Sfx(Assets.MUS_INTRO);
-					Globals.musicLoop.loop();				
+					musicPlay(Assets.MUS_INTRO);
 				case "intro2":
 				case "intro3":
+					add(new GoodFairy);
+					break;
 				case "intro4":
 					add(new GoodFairy);
+					musicPlay(Assets.MUS_WOODS);
 					break;
 				default:
 					// do nothing
 				break;
 			}
+		}
+		
+		private function musicPlay(myMusic:Class):void 
+		{
+			// Stop any music currently playing and start a new mp3
+			
+			if (Globals.musicLoop != null) { Globals.musicLoop.stop(); }
+			Globals.musicLoop = new Sfx(myMusic);
+			Globals.musicLoop.loop(.4);
 		}
 		
 	}

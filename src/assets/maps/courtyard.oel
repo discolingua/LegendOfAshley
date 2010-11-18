@@ -1,4 +1,4 @@
-<level roomName="courtyard" description="">
+<level roomName="courtyard" bgColor="0x00c322" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
@@ -14,17 +14,17 @@
     <rect id="1" x="64" y="96" w="64" h="64"/>
   </terrain>
   <objects>
-    <exit x="80" y="0" destRoom="house" destPoint=""/>
-    <exit x="96" y="0" destRoom="house" destPoint=""/>
+    <exit x="80" y="0" destRoom="house"/>
+    <exit x="96" y="0" destRoom="house"/>
     <playerStart x="160" y="112"/>
-    <exit x="0" y="80" destRoom="tavern" destPoint=""/>
-    <exit x="0" y="96" destRoom="tavern" destPoint=""/>
-    <exit x="304" y="112" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="128" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="144" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="160" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="176" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="192" destRoom="eastroad" destPoint=""/>
-    <exit x="304" y="208" destRoom="eastroad" destPoint=""/>
+    <exit x="0" y="80" destRoom="tavern"/>
+    <exit x="0" y="96" destRoom="tavern"/>
+    <exit x="304" y="112" destRoom="eastroad"/>
+    <exit x="304" y="128" destRoom="eastroad"/>
+    <exit x="304" y="144" destRoom="eastroad"/>
+    <exit x="304" y="160" destRoom="eastroad"/>
+    <exit x="304" y="176" destRoom="eastroad"/>
+    <exit x="304" y="192" destRoom="eastroad"/>
+    <exit x="304" y="208" destRoom="eastroad"/>
   </objects>
 </level>

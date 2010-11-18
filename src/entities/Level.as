@@ -131,7 +131,7 @@ package entities
 			
 			// monster spawns ***************************************************************************
 			
-			dataList = xmlData.objects.spawn;
+			dataList = xmlData.objects.badFairySpawn;
 			
 			for each (dataElement in dataList)
 			{
