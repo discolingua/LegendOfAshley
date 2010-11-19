@@ -17,6 +17,9 @@ package entities
 		
 		override public function begin():void
 		{
+//			var soundwaveTools:SoundwaveTools = new SoundwaveTools;
+//			add(soundwaveTools);
+			
 			FP.screen.color = 0x00C322;
 			
 			// add
@@ -26,6 +29,7 @@ package entities
 			
 			Globals.level = new Level(Constants.locations[mapName]);
 			add(Globals.level);
+			
 			
 			
 			checkSpecialRooms(mapName);
@@ -45,6 +49,9 @@ package entities
 		{
 			switch (myMap) 
 			{
+				case "intro0":
+					//soundTest();
+					break;
 				case "intro1":
 					musicPlay(Assets.MUS_INTRO);
 				case "intro2":
@@ -61,7 +68,8 @@ package entities
 			}
 		}
 		
-		private function musicPlay(myMusic:Class):void 
+
+	private function musicPlay(myMusic:Class):void 
 		{
 			// Stop any music currently playing and start a new mp3
 			

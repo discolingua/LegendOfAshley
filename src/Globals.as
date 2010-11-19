@@ -9,8 +9,8 @@ package
 		// only one music loop needed, set e.g. in GameWorld.checkSpecialRooms
 		
 		public static var musicLoop:Sfx;
+		public static var myFrequency:Number = 440;
 		
-
 		// the main objects for player + map + text panel
 		
 		public static var level:Level;
