@@ -18,10 +18,17 @@ package
 		public static var textBlock:Array;
 		
 		
-		// flag to let the player read the text panel
+		// room to restart from after death
 		
-		public static var isTalking:Boolean;
-
+		public static var checkRoom = "courtyard";
+		
+		
+		// bits for score tracking purposes
+		
+		public static var numberOfDeaths:Number = 0;
+		public static var badFairyKills:Number = 0;
+		public static var badFairyNestKills:Number = 0;
+		
 		
 		public function Globals() 
 		{

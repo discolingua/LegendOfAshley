@@ -6,7 +6,7 @@ package entities
 	
 	public class BadFairy extends Entity
 	{
-		private var speed:Number = 80;
+		private var speed:Number = 40;
 		private var mySpeed:Number = speed * FP.elapsed;
 		
 		public function BadFairy() 
@@ -20,7 +20,25 @@ package entities
 		override public function update():void 
 		{
 			mySpeed = speed * FP.elapsed;
-			x -= mySpeed;
+			
+			if (x < Globals.adventurer.x)
+			{
+				x += mySpeed;
+			}
+			else
+			{
+				x -= mySpeed;
+			}
+			
+			if (y < Globals.adventurer.y)
+			{
+				y += mySpeed;
+			}
+			else
+			{
+				y -= mySpeed;
+			}
+			
 		}
 		
 	}

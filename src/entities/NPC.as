@@ -6,7 +6,7 @@ package entities
 	
 	public class NPC extends Entity
 	{
-		public var spokenText:String;
+		public var spokenText:String = "jklkdkj";
 		
 		public function NPC() 
 		{
@@ -20,7 +20,7 @@ package entities
 		{
 			if (collide("adventurer", this.x, this.y))
 			{
-				(FP.world as GameWorld).add(new SpeechPopup(spokenText));
+				(FP.world as GameWorld).add(new SpeechPopup("lololol", "0xffffff", y-10));
 			}
 		}
 		
