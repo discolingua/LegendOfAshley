@@ -1,5 +1,8 @@
 package entities
 {
+	// This is the main player controlled object. This class reads (and responds to) player input
+	// (movement etc.) It also checks for collisions with room exits and walls.
+	
 	import flash.geom.Point;
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
@@ -15,8 +18,6 @@ package entities
 			// constructor to set properties of the object
 			
 			graphic = new Image(Assets.SPR_ADVENTURER);
-			x = 40;
-			y = 40;
 			width = Constants.TILE_SIZE * 0.5;
 			height = Constants.TILE_SIZE;
 			type = "adventurer";

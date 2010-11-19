@@ -19,7 +19,7 @@ package entities
 		
 		public function sineWaveGenerator(event:SampleDataEvent):void 
 		{		 
-			for (var i:int = 0; i < 2048; i++) 
+			for (var i:int = 0; i < 8192; i++) 
 			{ 
 				var ampMultiplier:Number = .015;
 				

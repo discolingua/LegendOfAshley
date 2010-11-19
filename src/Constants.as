@@ -25,7 +25,8 @@ package
 			house: Assets.MAP_HOUSE,
 			eastroad: Assets.MAP_EASTROAD,
 			outsidehut: Assets.MAP_OUTSIDEHUT,
-			insidehut: Assets.MAP_INSIDEHUT
+			insidehut: Assets.MAP_INSIDEHUT,
+			forest7: Assets.MAP_FOREST7
 		};
 		
 	}

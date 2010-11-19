@@ -48,6 +48,9 @@ package
 		public static const MAP_OUTSIDEHUT:Class;
 		[Embed (source = "assets/maps/forest/insidehut.oel", mimeType = "application/octet-stream")]
 		public static const MAP_INSIDEHUT:Class;
+		[Embed (source = "assets/maps/forest/forest7.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST7:Class;
+		
 		
 		// music
 		

@@ -33,6 +33,27 @@
     <tile id="2" x="80" y="32"/>
     <tile id="2" x="192" y="144"/>
     <tile id="2" x="80" y="176"/>
+    <tile id="1" x="32" y="224"/>
+    <tile id="1" x="48" y="224"/>
+    <tile id="1" x="64" y="224"/>
+    <tile id="1" x="80" y="224"/>
+    <tile id="1" x="96" y="224"/>
+    <tile id="1" x="112" y="224"/>
+    <tile id="1" x="128" y="224"/>
+    <tile id="1" x="144" y="224"/>
+    <tile id="1" x="160" y="224"/>
+    <tile id="1" x="176" y="224"/>
+    <tile id="1" x="192" y="224"/>
+    <tile id="1" x="208" y="224"/>
+    <tile id="1" x="224" y="224"/>
+    <tile id="1" x="240" y="224"/>
+    <tile id="1" x="256" y="224"/>
+    <tile id="1" x="272" y="224"/>
+    <tile id="1" x="288" y="224"/>
+    <tile id="1" x="304" y="224"/>
+    <tile id="18" x="16" y="224"/>
+    <tile id="20" x="16" y="208"/>
+    <rect id="16" x="32" y="208" w="288" h="16"/>
   </terrain>
   <objects>
     <exit x="0" y="128" destRoom="courtyard"/>
@@ -48,5 +69,17 @@
     <exit x="160" y="0" destRoom="outsidehut"/>
     <exit x="176" y="0" destRoom=""/>
     <badFairySpawn x="288" y="176"/>
+    <exit x="304" y="16" destRoom="forest7"/>
+    <exit x="304" y="32" destRoom="forest7"/>
+    <exit x="304" y="48" destRoom="forest7"/>
+    <exit x="304" y="64" destRoom="forest7"/>
+    <exit x="304" y="80" destRoom="forest7"/>
+    <exit x="304" y="96" destRoom="forest7"/>
+    <exit x="304" y="112" destRoom="forest7"/>
+    <exit x="304" y="128" destRoom="forest7"/>
+    <exit x="304" y="144" destRoom="forest7"/>
+    <exit x="304" y="160" destRoom="forest7"/>
+    <exit x="304" y="176" destRoom="forest7"/>
+    <exit x="304" y="192" destRoom="forest7"/>
   </objects>
 </level>

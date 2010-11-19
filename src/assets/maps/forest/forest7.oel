@@ -1,0 +1,46 @@
+<level roomName="forest7" bgColor="0x38e156" description="">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <tile id="20" x="112" y="64"/>
+    <tile id="21" x="176" y="64"/>
+    <rect id="16" x="128" y="64" w="48" h="16"/>
+    <tile id="22" x="112" y="80"/>
+    <tile id="23" x="176" y="80"/>
+    <rect id="17" x="128" y="80" w="48" h="16"/>
+    <rect id="16" x="16" y="208" w="288" h="16"/>
+    <rect id="1" x="0" y="224" w="320" h="16"/>
+    <rect id="16" x="0" y="208" w="16" h="16"/>
+    <rect id="16" x="304" y="208" w="16" h="16"/>
+    <tile id="26" x="224" y="112"/>
+    <tile id="24" x="224" y="96"/>
+    <tile id="24" x="224" y="80"/>
+    <tile id="24" x="224" y="64"/>
+    <tile id="24" x="224" y="128"/>
+    <tile id="26" x="224" y="144"/>
+    <tile id="25" x="208" y="144"/>
+    <tile id="25" x="192" y="144"/>
+    <tile id="25" x="176" y="144"/>
+    <tile id="7" x="48" y="160"/>
+    <tile id="7" x="48" y="96"/>
+    <rect id="0" x="0" y="0" w="304" h="16"/>
+    <rect id="7" x="304" y="0" w="16" h="64"/>
+    <rect id="7" x="304" y="144" w="16" h="64"/>
+    <tile id="13" x="304" y="64"/>
+    <tile id="13" x="304" y="80"/>
+    <tile id="13" x="304" y="96"/>
+    <tile id="13" x="304" y="112"/>
+    <tile id="13" x="304" y="128"/>
+    <rect id="7" x="0" y="16" w="16" h="80"/>
+    <rect id="7" x="0" y="144" w="16" h="64"/>
+  </terrain>
+  <objects>
+    <badFairySpawn x="192" y="176"/>
+    <badFairySpawn x="256" y="48"/>
+    <badFairySpawn x="32" y="128"/>
+    <playerStart x="128" y="128"/>
+    <exit x="0" y="96" destRoom="eastroad"/>
+    <exit x="0" y="112" destRoom="eastroad"/>
+    <exit x="0" y="128" destRoom="eastroad"/>
+  </objects>
+</level>

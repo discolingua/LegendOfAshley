@@ -1,5 +1,6 @@
 package entities 
 {
+	import flash.geom.Point;
 	import net.flashpunk.*
 	import net.flashpunk.graphics.*;
 	
@@ -13,6 +14,14 @@ package entities
 			width = 8;
 			height = 16;
 			type = "npc";
+		}
+		
+		override public function update():void 
+		{
+			if (collide("adventurer", this.x, this.y))
+			{
+				(FP.world as GameWorld).add(new SpeechPopup(spokenText));
+			}
 		}
 		
 	}
