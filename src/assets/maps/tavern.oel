@@ -40,6 +40,9 @@
     <exit x="304" y="96" destRoom="courtyard"/>
     <exit x="304" y="112" destRoom="courtyard"/>
     <exit x="304" y="128" destRoom="courtyard"/>
-    <npc x="80" y="176" npcName="Kendra" npcSpeech="chicken and waffles"/>
+    <npc x="80" y="176" npcName="Kendra" npcSpeech="this place is called|&quot;the scroll bar&quot;|it's a wizard pub."/>
+    <npc x="272" y="32" npcName="Zardoz" npcSpeech="elf magic sends|monsters off to|happy elf fun land|they love it there!"/>
+    <npc x="272" y="192" npcName="Zaxxon" npcSpeech="Elf magic destroys|monsters entirely.|They say it's|incredibly painful!"/>
+    <npc x="48" y="112" npcName="Ronaldo" npcSpeech=""/>
   </objects>
 </level>

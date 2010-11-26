@@ -50,6 +50,10 @@ package
 		public static const MAP_INSIDEHUT:Class;
 		[Embed (source = "assets/maps/forest/forest7.oel", mimeType = "application/octet-stream")]
 		public static const MAP_FOREST7:Class;
+		[Embed (source = "assets/maps/forest/forest8.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST8:Class;
+		[Embed (source = "assets/maps/forest/forest9.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST9:Class;
 		
 		
 		// music

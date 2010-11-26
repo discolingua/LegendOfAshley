@@ -30,6 +30,6 @@
     <exit x="160" y="224" destRoom="outsidehut"/>
     <exit x="176" y="224" destRoom="outsidehut"/>
     <playerStart x="144" y="192"/>
-    <npc x="64" y="48" npcName="Darius" npcSpeech="Here is some npc speech!"/>
+    <npc x="64" y="48" npcName="Darius" npcSpeech="there's a guide through the swamp|a really ugly dog.|a really ugly damn dog."/>
   </objects>
 </level>

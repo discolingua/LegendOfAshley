@@ -151,7 +151,7 @@ package entities
 				(FP.world as GameWorld).add(npc);
 				npc.x = int(dataElement.@x);
 				npc.y = int(dataElement.@y);
-				npc.npcSpeech = String(dataElement.@npcSpeech);
+				npc.npcSpeech = String(dataElement.@npcSpeech).replace(Constants.DELIMITER, "\n");
 			}
 			
 		}

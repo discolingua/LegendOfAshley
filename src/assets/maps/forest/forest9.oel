@@ -1,0 +1,28 @@
+<level roomName="forest9" bgColor="" description="">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <rect id="1" x="0" y="0" w="96" h="240"/>
+    <rect id="19" x="96" y="0" w="16" h="240"/>
+    <rect id="18" x="224" y="0" w="16" h="240"/>
+    <rect id="1" x="240" y="0" w="80" h="240"/>
+    <tile id="2" x="128" y="48"/>
+  </terrain>
+  <objects>
+    <exit x="112" y="0" destRoom="forest7"/>
+    <exit x="128" y="0" destRoom="forest7"/>
+    <exit x="144" y="0" destRoom="forest7"/>
+    <exit x="160" y="0" destRoom="forest7"/>
+    <exit x="176" y="0" destRoom="forest7"/>
+    <exit x="192" y="0" destRoom="forest7"/>
+    <exit x="208" y="0" destRoom="forest7"/>
+    <exit x="112" y="224" destRoom="forest1"/>
+    <exit x="128" y="224" destRoom="forest1"/>
+    <exit x="144" y="224" destRoom="forest1"/>
+    <exit x="160" y="224" destRoom="forest1"/>
+    <exit x="176" y="224" destRoom="forest1"/>
+    <exit x="192" y="224" destRoom="forest1"/>
+    <exit x="208" y="224" destRoom=""/>
+    <playerStart x="160" y="112"/>
+  </objects>
+</level>
