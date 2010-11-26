@@ -20,7 +20,7 @@ package
 		
 		// room to restart from after death
 		
-		public static var checkRoom = "courtyard";
+		public static var checkRoom:String = "courtyard";
 		
 		
 		// bits for score tracking purposes

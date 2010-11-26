@@ -72,7 +72,7 @@ package entities
 			
 			levelDesc = xmlData.@description;
 			levelDesc = levelDesc.replace( Constants.DELIMITER, "\n");
-			// (FP.world as GameWorld).add(new TextPopup(levelDesc));
+			(FP.world as GameWorld).add(new TextPopup(levelDesc));
 			
 			// set player start location *******************************************************************
 			
@@ -151,7 +151,7 @@ package entities
 				(FP.world as GameWorld).add(npc);
 				npc.x = int(dataElement.@x);
 				npc.y = int(dataElement.@y);
-				npc.spokenText = String(dataElement.@spokenText);
+				npc.npcSpeech = String(dataElement.@npcSpeech);
 			}
 			
 		}

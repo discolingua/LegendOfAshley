@@ -10,7 +10,7 @@ package entities
 		
 	public class Adventurer extends Entity
 	{
-		private var speed:Number = 150;
+		private var speed:Number = 110;
 		private var facing:String = "up";
 		
 		public function Adventurer():void 
@@ -99,16 +99,16 @@ package entities
 				switch (facing)
 				{
 					case "up":
-					y += Math.floor(y / 16);
+					y += Math.floor(y / 63);
 					break;
 					case "down":
-					y -= Math.ceil(y / 16);	
+					y -= Math.ceil(y / 63);	
 					break;
 					case "left":
-					x += Math.floor(x / 16);
+					x += Math.floor(x / 63);
 					break;
 					case "right":
-					x -= Math.ceil(x / 16);
+					x -= Math.ceil(x / 63);
 					break;
 				}
 				
