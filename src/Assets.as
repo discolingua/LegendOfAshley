@@ -1,6 +1,8 @@
 package  
 {
-	// this class is to consolidate all embed data (artwork, maps, sound)
+	/**
+	 * this class is to consolidate all embed data (artwork, maps, sound) in one place
+	 */
 	
 	public class Assets 
 	{

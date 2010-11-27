@@ -1,11 +1,7 @@
-<level roomName="house" description="whose house is this">
+<level roomName="house" bgColor="" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">
-    <rect id="3" x="0" y="16" w="16" h="224"/>
-    <rect id="3" x="304" y="16" w="16" h="224"/>
-    <rect id="3" x="16" y="224" w="112" h="16"/>
-    <rect id="3" x="192" y="224" w="112" h="16"/>
     <tile id="5" x="112" y="0"/>
     <tile id="5" x="192" y="0"/>
     <tile id="3" x="96" y="0"/>
@@ -46,12 +42,19 @@
     <tile id="3" x="272" y="80"/>
     <tile id="4" x="64" y="48"/>
     <tile id="4" x="240" y="48"/>
+    <rect id="3" x="0" y="16" w="16" h="224"/>
+    <rect id="3" x="304" y="16" w="16" h="224"/>
+    <rect id="3" x="16" y="224" w="112" h="16"/>
+    <rect id="3" x="192" y="224" w="112" h="16"/>
   </terrain>
   <objects>
-    <exit x="128" y="224" destRoom="courtyard" destPoint=""/>
-    <exit x="144" y="224" destRoom="courtyard" destPoint=""/>
-    <exit x="160" y="224" destRoom="courtyard" destPoint=""/>
-    <exit x="176" y="224" destRoom="courtyard" destPoint=""/>
+    <exit x="128" y="224" destRoom="courtyard"/>
+    <exit x="144" y="224" destRoom="courtyard"/>
+    <exit x="160" y="224" destRoom="courtyard"/>
+    <exit x="176" y="224" destRoom="courtyard"/>
     <playerStart x="144" y="176"/>
+    <npc x="96" y="32" npcName="J-Run" npcSpeech="your friend went|off with bad fairies?|Prof. Castro can|help you find them."/>
+    <npc x="64" y="96" npcName="Nepal" npcSpeech="who's house is this?|this is j-run's house!"/>
+    <npc x="256" y="48" npcName="Starla" npcSpeech=""/>
   </objects>
 </level>

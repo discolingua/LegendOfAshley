@@ -1,5 +1,9 @@
 package  
 {
+	/**
+	 * this is a central class to organize game constants -- physics parameters, gameplay balance knobs, etc.
+	 */
+	
 	public class Constants 
 	{
 		

@@ -1,5 +1,14 @@
 package 
 {
+	/*--
+	 * LEGEND OF ASHLEY
+	 * 
+	 * Steve Harvey (h_double) 2010
+	 * 
+	 * built using Flex SDK 4 and Flashpunk 1.5
+	 * 
+	 */
+	
 	import net.flashpunk.*;
 	import entities.*;
 	
