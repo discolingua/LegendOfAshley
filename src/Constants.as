@@ -26,6 +26,12 @@ package
 			eastroad: Assets.MAP_EASTROAD,
 			outsidehut: Assets.MAP_OUTSIDEHUT,
 			insidehut: Assets.MAP_INSIDEHUT,
+			forest1: Assets.MAP_FOREST1,
+			forest2: Assets.MAP_FOREST2,
+			forest3: Assets.MAP_FOREST3,
+			forest4: Assets.MAP_FOREST4,
+			forest5: Assets.MAP_FOREST5,
+			forest6: Assets.MAP_FOREST6,
 			forest7: Assets.MAP_FOREST7,
 			forest8: Assets.MAP_FOREST8,
 			forest9: Assets.MAP_FOREST9

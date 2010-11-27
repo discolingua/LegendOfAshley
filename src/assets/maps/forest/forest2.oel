@@ -1,0 +1,25 @@
+<level roomName="forest6" bgColor="" description="">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <rect id="6" x="0" y="0" w="320" h="64"/>
+    <rect id="6" x="128" y="112" w="48" h="128"/>
+    <rect id="6" x="0" y="64" w="32" h="112"/>
+    <rect id="6" x="0" y="224" w="128" h="16"/>
+    <rect id="6" x="176" y="224" w="144" h="16"/>
+    <rect id="6" x="208" y="128" w="112" h="32"/>
+    <rect id="7" x="304" y="64" w="16" h="64"/>
+  </terrain>
+  <objects>
+    <playerStart x="112" y="80"/>
+    <badFairySpawn x="240" y="192"/>
+    <badFairySpawn x="208" y="176"/>
+    <exit x="0" y="176" destRoom="forest7"/>
+    <exit x="0" y="192" destRoom="forest7"/>
+    <exit x="0" y="208" destRoom="forest7"/>
+    <exit x="304" y="160" destRoom="forest6"/>
+    <exit x="304" y="176" destRoom="forest6"/>
+    <exit x="304" y="192" destRoom="forest6"/>
+    <exit x="304" y="208" destRoom="forest6"/>
+  </objects>
+</level>

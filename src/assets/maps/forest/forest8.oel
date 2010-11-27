@@ -27,6 +27,7 @@
     <tile id="6" x="176" y="144"/>
     <tile id="6" x="256" y="112"/>
     <tile id="7" x="272" y="112"/>
+    <tile id="1" x="288" y="208"/>
     <rect id="27" x="128" y="208" w="16" h="32"/>
     <rect id="27" x="208" y="208" w="16" h="32"/>
     <rect id="24" x="0" y="48" w="16" h="96"/>
@@ -38,7 +39,6 @@
     <rect id="16" x="224" y="208" w="64" h="16"/>
     <rect id="1" x="224" y="224" w="96" h="16"/>
     <rect id="18" x="288" y="0" w="16" h="208"/>
-    <tile id="1" x="288" y="208"/>
     <rect id="1" x="304" y="0" w="16" h="224"/>
   </terrain>
   <objects>
@@ -49,7 +49,7 @@
     <exit x="176" y="224" destRoom="forest4"/>
     <exit x="192" y="224" destRoom="forest4"/>
     <exit x="224" y="0" destRoom="forest2"/>
-    <exit x="240" y="0" destRoom="forest2"/>
+    <exit x="240" y="0" destRoom="forest5"/>
     <playerStart x="32" y="176"/>
     <badFairySpawn x="32" y="112"/>
     <badFairySpawn x="80" y="64"/>

@@ -1,0 +1,73 @@
+<level roomName="forest4" bgColor="" description="">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <tile id="2" x="128" y="48"/>
+    <rect id="1" x="0" y="0" w="112" h="48"/>
+    <tile id="27" x="112" y="0"/>
+    <tile id="27" x="112" y="16"/>
+    <tile id="27" x="112" y="32"/>
+    <tile id="27" x="224" y="0"/>
+    <tile id="27" x="224" y="16"/>
+    <tile id="27" x="224" y="32"/>
+    <rect id="1" x="240" y="0" w="80" h="48"/>
+    <rect id="17" x="0" y="48" w="112" h="16"/>
+    <rect id="17" x="240" y="48" w="80" h="16"/>
+    <rect id="27" x="112" y="48" w="16" h="16"/>
+    <rect id="27" x="224" y="48" w="16" h="16"/>
+    <tile id="3" x="16" y="96"/>
+    <tile id="3" x="32" y="144"/>
+    <tile id="3" x="48" y="144"/>
+    <tile id="3" x="240" y="144"/>
+    <tile id="3" x="240" y="160"/>
+    <tile id="3" x="176" y="160"/>
+    <rect id="25" x="16" y="224" w="96" h="16"/>
+    <rect id="25" x="224" y="224" w="80" h="16"/>
+    <tile id="26" x="0" y="64"/>
+    <rect id="24" x="0" y="80" w="16" h="112"/>
+    <tile id="26" x="0" y="192"/>
+    <tile id="26" x="0" y="224"/>
+    <tile id="24" x="0" y="208"/>
+    <tile id="25" x="16" y="64"/>
+    <tile id="25" x="32" y="64"/>
+    <tile id="25" x="48" y="64"/>
+    <tile id="25" x="64" y="64"/>
+    <tile id="7" x="208" y="96"/>
+    <tile id="7" x="96" y="144"/>
+    <rect id="6" x="304" y="96" w="16" h="144"/>
+    <tile id="0" x="304" y="64"/>
+    <tile id="0" x="304" y="80"/>
+    <tile id="10" x="240" y="128"/>
+    <tile id="10" x="160" y="160"/>
+    <tile id="2" x="144" y="160"/>
+    <tile id="6" x="96" y="160"/>
+    <tile id="25" x="112" y="160"/>
+    <tile id="25" x="128" y="160"/>
+    <tile id="7" x="192" y="144"/>
+    <tile id="26" x="224" y="192"/>
+    <tile id="26" x="208" y="192"/>
+    <rect id="24" x="208" y="112" w="16" h="80"/>
+    <tile id="7" x="256" y="192"/>
+    <tile id="24" x="256" y="176"/>
+    <tile id="2" x="256" y="208"/>
+  </terrain>
+  <objects>
+    <exit x="128" y="0" destRoom="forest8"/>
+    <exit x="144" y="0" destRoom="forest8"/>
+    <exit x="160" y="0" destRoom="forest8"/>
+    <exit x="176" y="0" destRoom="forest8"/>
+    <exit x="192" y="0" destRoom="forest8"/>
+    <exit x="208" y="0" destRoom="forest8"/>
+    <exit x="112" y="224" destRoom="forest3"/>
+    <exit x="128" y="224" destRoom="forest3"/>
+    <exit x="144" y="224" destRoom="forest3"/>
+    <exit x="160" y="224" destRoom="forest3"/>
+    <exit x="176" y="224" destRoom="forest3"/>
+    <exit x="192" y="224" destRoom="forest3"/>
+    <exit x="208" y="224" destRoom="forest3"/>
+    <playerStart x="160" y="112"/>
+    <badFairySpawn x="48" y="192"/>
+    <npc x="96" y="128" npcName="Gomez" npcSpeech="be careful, that's|one bad dog down there"/>
+    <badFairySpawn x="176" y="192"/>
+  </objects>
+</level>

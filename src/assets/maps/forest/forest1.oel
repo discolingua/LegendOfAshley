@@ -1,0 +1,49 @@
+<level roomName="forest6" bgColor="" description="">
+  <width>320</width>
+  <height>240</height>
+  <terrain set="terrain">
+    <rect id="2" x="0" y="0" w="320" h="64"/>
+    <rect id="2" x="0" y="64" w="80" h="176"/>
+    <rect id="2" x="240" y="64" w="80" h="176"/>
+    <tile id="6" x="80" y="224"/>
+    <tile id="6" x="112" y="192"/>
+    <tile id="6" x="96" y="128"/>
+    <tile id="6" x="96" y="176"/>
+    <tile id="6" x="96" y="160"/>
+    <tile id="6" x="176" y="208"/>
+    <tile id="6" x="192" y="208"/>
+    <tile id="22" x="192" y="144"/>
+    <tile id="23" x="224" y="144"/>
+    <tile id="20" x="192" y="80"/>
+    <tile id="21" x="224" y="80"/>
+    <tile id="16" x="208" y="80"/>
+    <tile id="17" x="208" y="144"/>
+    <tile id="18" x="192" y="96"/>
+    <tile id="18" x="192" y="112"/>
+    <tile id="18" x="192" y="128"/>
+    <tile id="19" x="224" y="96"/>
+    <tile id="19" x="224" y="112"/>
+    <tile id="19" x="224" y="128"/>
+    <tile id="1" x="208" y="96"/>
+    <tile id="1" x="208" y="112"/>
+    <tile id="1" x="208" y="128"/>
+    <tile id="7" x="160" y="224"/>
+    <tile id="26" x="112" y="224"/>
+    <tile id="24" x="112" y="208"/>
+    <tile id="24" x="80" y="128"/>
+    <tile id="24" x="80" y="112"/>
+    <tile id="24" x="80" y="96"/>
+    <tile id="24" x="80" y="80"/>
+    <tile id="24" x="80" y="64"/>
+    <tile id="7" x="80" y="192"/>
+    <tile id="7" x="96" y="144"/>
+    <tile id="7" x="208" y="192"/>
+    <tile id="2" x="176" y="224"/>
+    <tile id="2" x="224" y="192"/>
+  </terrain>
+  <objects>
+    <playerStart x="160" y="112"/>
+    <exit x="128" y="224" destRoom="forest0"/>
+    <exit x="144" y="224" destRoom=""/>
+  </objects>
+</level>

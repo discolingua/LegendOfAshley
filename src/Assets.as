@@ -25,6 +25,8 @@ package
 		
 		// Maps! Each map also should have a data dictionary entry in Constants.as
 		
+		// intro hallway
+		
 		[Embed(source = "assets/maps/intro/intro0.oel", mimeType = "application/octet-stream")]
 		public static const MAP_INTRO0:Class;
 		[Embed(source = "assets/maps/intro/intro1.oel", mimeType = "application/octet-stream")]
@@ -34,7 +36,9 @@ package
 		[Embed(source = "assets/maps/intro/intro3.oel", mimeType = "application/octet-stream")]
 		public static const MAP_INTRO3:Class;		
 		[Embed(source = "assets/maps/intro/intro4.oel", mimeType = "application/octet-stream")]
-		public static const MAP_INTRO4:Class;				
+		public static const MAP_INTRO4:Class;	
+		
+		// forest & swamp area
 		
 		[Embed(source = "assets/maps/courtyard.oel", mimeType = "application/octet-stream")] 
 		public static const MAP_COURTYARD:Class;
@@ -48,6 +52,18 @@ package
 		public static const MAP_OUTSIDEHUT:Class;
 		[Embed (source = "assets/maps/forest/insidehut.oel", mimeType = "application/octet-stream")]
 		public static const MAP_INSIDEHUT:Class;
+		[Embed (source = "assets/maps/forest/forest1.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST1:Class;
+		[Embed (source = "assets/maps/forest/forest2.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST2:Class;
+		[Embed (source = "assets/maps/forest/forest3.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST3:Class;
+		[Embed (source = "assets/maps/forest/forest4.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST4:Class;
+		[Embed (source = "assets/maps/forest/forest5.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST5:Class;
+		[Embed (source = "assets/maps/forest/forest6.oel", mimeType = "application/octet-stream")]
+		public static const MAP_FOREST6:Class;
 		[Embed (source = "assets/maps/forest/forest7.oel", mimeType = "application/octet-stream")]
 		public static const MAP_FOREST7:Class;
 		[Embed (source = "assets/maps/forest/forest8.oel", mimeType = "application/octet-stream")]
