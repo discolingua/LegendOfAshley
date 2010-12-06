@@ -55,6 +55,6 @@
     <playerStart x="144" y="176"/>
     <npc x="96" y="32" npcName="J-Run" npcSpeech="your friend went|off with bad fairies?|Prof. Castro can|help you find them."/>
     <npc x="64" y="96" npcName="Nepal" npcSpeech="who's house is this?|this is j-run's house!"/>
-    <npc x="256" y="48" npcName="Starla" npcSpeech=""/>
+    <npc x="256" y="48" npcName="Starla" npcSpeech="Prof. Castro?|He lives on the|far side of the|swamp. What|a strange guy."/>
   </objects>
 </level>

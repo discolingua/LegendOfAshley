@@ -1,8 +1,11 @@
 package entities
 {
-	// This is the main player controlled object. This class reads (and responds to) player input
-	// (movement etc.) It also checks for collisions with room exits and walls.
-	
+	/**
+	 * This is the main player controlled object. This class reads (and responds to) player input
+	 * (movement etc.) It also checks for collisions with room exits and walls.
+	 * 
+	 */
+		
 	import flash.geom.Point;
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
@@ -73,6 +76,16 @@ package entities
 					y += mySpeed;
 				}
 			}
+			
+			if (Input.pressed(Key.Z))
+			{
+				shoot();
+			}
+		}
+		
+		private function shoot():void 
+		{
+			trace("bang");	
 		}
 		
 		private function colliding(position:Point):Boolean 

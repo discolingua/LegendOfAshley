@@ -1,4 +1,4 @@
-<level roomName="forest4" bgColor="" description="">
+<level roomName="forest4" bgColor="0x38e156" description="">
   <width>320</width>
   <height>240</height>
   <terrain set="terrain">

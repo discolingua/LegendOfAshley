@@ -17,8 +17,6 @@ package entities
 		
 		override public function begin():void
 		{
-//			var soundwaveTools:SoundwaveTools = new SoundwaveTools;
-//			add(soundwaveTools);
 			
 			FP.screen.color = 0x00C322;
 			

@@ -30,6 +30,11 @@ package
 		public static var badFairyNestKills:Number = 0;
 		
 		
+		// elf magic danger level tracking
+		public static var emThreatLevel:Number = 0;
+		
+		
+		
 		public function Globals() 
 		{
 			
