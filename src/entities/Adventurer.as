@@ -30,6 +30,8 @@ package entities
 		
 		override public function update():void
 		{
+			// Globals.emThreatLevel *= 0.99;
+			
 			move();
 		}
 		

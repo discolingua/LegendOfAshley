@@ -19,6 +19,13 @@ package entities
 		
 		override public function update():void 
 		{
+			
+			if (collide("bullet", this.x, this.y))
+			{
+				Globals.emThreatLevel += 0.001;
+				destroy();
+			}
+			
 			mySpeed = speed * FP.elapsed;
 			
 			if (x < Globals.adventurer.x)
@@ -39,6 +46,11 @@ package entities
 				y -= mySpeed;
 			}
 			
+		}
+		
+		public function destroy():void
+		{
+			FP.world.remove(this);
 		}
 		
 	}

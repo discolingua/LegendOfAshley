@@ -21,13 +21,26 @@ package entities
 		{
 			// x% chance to spawn new bad fairy every frame
 			
-			if (Math.random() < 0.01)
+			if (Math.random() < 0.01 + Globals.emThreatLevel)
 			{
 				fairy = new BadFairy();
 				(FP.world as GameWorld).add(fairy);
 				fairy.x = this.x;
 				fairy.y = this.y;
 			}
+			
+			// check for hit
+			
+			if (collide("bullet", this.x, this.y))
+			{
+				destroy();
+			}
+			
+		}
+		
+		public function destroy():void 
+		{
+			FP.world.remove(this);
 		}
 	}
 
