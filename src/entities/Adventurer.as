@@ -10,6 +10,7 @@ package entities
 	import net.flashpunk.*;
 	import net.flashpunk.graphics.*;
 	import net.flashpunk.utils.*;
+	import entities.attacks.*;
 		
 	public class Adventurer extends Entity
 	{
@@ -85,7 +86,7 @@ package entities
 		
 		private function shoot():void 
 		{
-			trace("bang");	
+			world.add(new ElfBullet(x + 4, y, facing));
 		}
 		
 		private function colliding(position:Point):Boolean 

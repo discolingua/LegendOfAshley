@@ -20,8 +20,6 @@ package entities
 		{
 			if (collide("adventurer", this.x, this.y))
 			{
-				trace(npcSpeech);
-				trace("***");
 				(FP.world as GameWorld).add(new SpeechPopup(npcSpeech, "0xffffff", y-10));
 			}
 		}
